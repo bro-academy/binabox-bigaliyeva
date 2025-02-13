@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: 
+Student: Bigaliyeva Aigerim
 
-Mentor: 
+Mentor: Yurii Kapustin
