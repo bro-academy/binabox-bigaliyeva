@@ -8,404 +8,722 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <a href="#"> <img src="logo/bina.jpg" alt="Binabox logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Catalog </a></li>
-          <li><a href="#">Contact us</a></li>
+    <header class="header">
+      <a href="#">
+        <img class="logo logo--primary" src="logo/bina.jpg" alt="Binabox logo"
+      /></a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--selected">
+            <a href="#" class="main-nav__link">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Blog</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Catalog </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Contact us</a>
+          </li>
         </ul>
       </nav>
-      <a href="#">Discord</a>
-      <button type="button">Connect</button>
+      <a href="#" class="button button--large">Discord</a>
+      <button type="button" class="button button--large">Connect</button>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="banner">
+        <h1 class="banner__title">
           WITH <span>BINABOX EXPLORE</span>
           NFT COLLECTION
         </h1>
-        <p>We are the best way to check the rarity of NFT collection</p>
-        <span>2240+</span>
-        <span>Total Iteam </span>
-        <span>Profiles whitelisted </span>
-        <span>P>1000</span>
-        <a href="#">Connect Wallet</a>
-        <a href="#">Whitelist now</a>
-        <img src="banner.jpg" alt="banner logo" />
+        <p class="banner__text">
+          We are the best way to check the rarity of NFT collection
+        </p>
+        <span class="banner__stat banner__stat--number">2240+</span>
+        <span class="banner__stat banner__stat--text">Total Iteam </span>
+        <span class="banner__stat banner__stat--number">P>1000</span>
+        <span class="banner__stat banner__stat--text"
+          >Profiles whitelisted
+        </span>
+        <a href="#" class="button button--extra-large">Connect Wallet</a>
+        <a href="#" class="button button--extra-large">Whitelist now</a>
+        <img src="banner.jpg" class="banner__logo" alt="banner logo" />
       </section>
-      <section>
-        <h2>Catalog</h2>
-        <a href="#">See all</a>
-        <button type="button" class="slider_button_left">left</button>
-        <button type="button" class="slider_button_right">right</button>
-        <article>
-          <a href="#"
-            ><img src="card1.jpg" alt="card1 image" />
-            <p>199$</p>
-            <h3>Name Product</h3>
-          </a>
+      <section class="catalog">
+        <img src="icon.jpg" class="icon-img" alt="icon catalog" />
+        <h2 class="catalog__title">Catalog</h2>
+        <a href="#" class="catalog__link">See all</a>
+        <button type="button" class="button button--slider-left">left</button>
+        <button type="button" class="button button--slider-right">right</button>
+        <article class="product">
+          <div class="product__image">
+            <a href="#"
+              ><img src="card1.jpg" alt="card1 image" />
+              <span class="badge badge--new">New</span>
+              <p class="product__price">199$</p>
+              <h3 class="product__name">Name Product</h3>
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"
-            ><img src="card2.jpg" alt="card2 image" />
-            <p>199$</p>
-            <h3>Name Product</h3></a
-          >
+        <article class="product">
+          <div class="product__image">
+            <a href="#"
+              ><img src="card2.jpg" alt="card2 image" />
+              <span class="badge badge--new">New</span>
+              <p class="product__price">199$</p>
+              <h3 class="product__name">Name Product</h3></a
+            >
+          </div>
         </article>
-        <article>
-          <a href="#"
-            ><img src="card3.jpg" alt="card3 image" />
-            <p>199$</p>
-            <h3>Name Product</h3>
-          </a>
+        <article class="product">
+          <div class="product__image">
+            <a href="#"
+              ><img src="card3.jpg" alt="card3 image" />
+              <span class="badge badge--sold-out">Sold out</span>
+              <p class="product__price">199$</p>
+              <h3 class="product__name">Name Product</h3>
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"
-            ><img src="card4.jpg" alt="card4 image" />
-            <p>199$</p>
-            <h3>Name Product</h3></a
-          >
+        <article class="product">
+          <div class="product__image">
+            <a href="#"
+              ><img src="card4.jpg" alt="card4 image" />
+              <span class="badge badge--new">New</span>
+              <p class="product__price">199$</p>
+              <h3 class="product__name">Name Product</h3></a
+            >
+          </div>
         </article>
-        <article>
-          <a href="#"
-            ><img src="card5.jpg" alt="card5 image" />
-            <p>199$</p>
-            <h3>Name Product</h3></a
-          >
+        <article class="product">
+          <div class="product__image">
+            <a href="#"
+              ><img src="card5.jpg" alt="card5 image" />
+              <span class="badge badge--new">New</span>
+              <p class="product__price">199$</p>
+              <h3 class="product__name">Name Product</h3></a
+            >
+          </div>
         </article>
       </section>
-      <section>
-        <h2>Our blog</h2>
-        <article>
-          <img src="blogpic1.jpg" alt="blog picture1" />
-          <img src="icon1.jpg" alt="icon human" />
-          <p>Tony Nguyen</p>
-          <img src="icon2.jpg" alt="icon calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
-          <h3>Sonic live</h3>
-          <p>
+      <section class="blog">
+        <h2 class="blog__title">Our blog</h2>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="blogpic1.jpg" alt="blog picture1" />
+            <span class="badge badge--nft">NFT</span>
+          </div>
+          <img src="icon1.jpg" class="icon-img" alt="icon human" />
+          <p class="blog-card__author">Tony Nguyen</p>
+          <img src="icon2.jpg" class="icon-img" alt="icon calendar" />
+          <time datetime="2022-06-20" class="blog-card__date">20 Jun 2022</time>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="button button--extra-large">Read more</a>
         </article>
-        <article>
-          <img src="blogpic2.jpg" alt="blog picture2" />
-          <img src="icon1.jpg" alt="icon human" />
-          <p>Tony Nguyen</p>
-          <img src="icon2.jpg" alt="icon calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
-          <h3>Sonic live</h3>
-          <p>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="blogpic2.jpg" alt="blog picture2" />
+            <span class="badge badge--nft">NFT</span>
+          </div>
+          <img src="icon1.jpg" class="icon-img" alt="icon human" />
+          <p class="blog-card__author">Tony Nguyen</p>
+          <img src="icon2.jpg" class="icon-img" alt="icon calendar" />
+          <time datetime="2022-06-20" class="blog-card__date">20 Jun 2022</time>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="button button--extra-large">Read more</a>
         </article>
-        <article>
-          <img src="blogpic3.jpg" alt="blog picture3" />
-          <img src="icon1.jpg" alt="icon human" />
-          <p>Tony Nguyen</p>
-          <img src="icon2.jpg" alt="icon calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
-          <h3>Sonic live</h3>
-          <p>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="blogpic3.jpg" alt="blog picture3" />
+            <span class="badge badge--nft">NFT</span>
+          </div>
+          <img src="icon1.jpg" class="icon-img" alt="icon human" />
+          <p class="blog-card__author">Tony Nguyen</p>
+          <img src="icon2.jpg" class="icon-img" alt="icon calendar" />
+          <time datetime="2022-06-20" class="blog-card__date">20 Jun 2022</time>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="button button--extra-large">Read more</a>
         </article>
-        <article>
-          <img src="blogpic4.jpg" alt="blog picture4" />
-          <img src="icon1.jpg" alt="icon human" />
-          <p>Tony Nguyen</p>
-          <img src="icon2.jpg" alt="icon calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
-          <h3>Sonic live</h3>
-          <p>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="blogpic4.jpg" alt="blog picture4" />
+            <span class="badge badge--nft">NFT</span>
+          </div>
+          <img src="icon1.jpg" class="icon-img" alt="icon human" />
+          <p class="blog-card__author">Tony Nguyen</p>
+          <img src="icon2.jpg" class="icon-img" alt="icon calendar" />
+          <time datetime="2022-06-20" class="blog-card__date">20 Jun 2022</time>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="button button--extra-large">Read more</a>
         </article>
-        <article>
-          <img src="blogpic5.jpg" alt="blog picture5" />
-          <img src="icon1.jpg" alt="icon human" />
-          <p>Tony Nguyen</p>
-          <img src="icon2.jpg" alt="icon calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
-          <h3>Sonic live</h3>
-          <p>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="blogpic5.jpg" alt="blog picture5" />
+            <span class="badge badge--nft">NFT</span>
+          </div>
+          <img src="icon1.jpg" class="icon-img" alt="icon human" />
+          <p class="blog-card__author">Tony Nguyen</p>
+          <img src="icon2.jpg" class="icon-img" alt="icon calendar" />
+          <time datetime="2022-06-20" class="blog-card__date">20 Jun 2022</time>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="button button--extra-large">Read more</a>
         </article>
-        <article>
-          <img src="blogpic6.jpg" alt="blog picture6" />
-          <img src="icon1.jpg" alt="icon human" />
-          <p>Tony Nguyen</p>
-          <img src="icon2.jpg" alt="icon calendar" />
-          <time datetime="2022-06-20">20 Jun 2022</time>
-          <h3>Sonic live</h3>
-          <p>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="blogpic6.jpg" alt="blog picture6" />
+            <span class="badge badge--nft">NFT</span>
+          </div>
+          <img src="icon1.jpg" class="icon-img" alt="icon human" />
+          <p class="blog-card__author">Tony Nguyen</p>
+          <img src="icon2.jpg" class="icon-img" alt="icon calendar" />
+          <time datetime="2022-06-20" class="blog-card__date">20 Jun 2022</time>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="button button--extra-large">Read more</a>
         </article>
-        <a href="#">Read more</a>
+        <a href="#" class="button button--extra-large">Read more</a>
       </section>
-      <section>
-        <h2>About us</h2>
-        <p>
+      <section class="about-us">
+        <h2 class="about-us__title">About us</h2>
+        <p class="about-us__text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
           non proident, sunt in culpa qui officia dese runt mollit anim id est
           laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
           occaecat
         </p>
-        <ul>
-          <li>
-            <h3>High quality</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <article class="info-card">
+              <h3 class="info-card__title">High quality</h3>
+              <p class="info-card__text">
+                Lorem Ipsum is simply dummy text of the printing and Ipsum
+                typesetting industry.
+              </p>
+            </article>
           </li>
-          <li>
-            <h3>Big collection</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
+          <li class="about-us__item">
+            <article class="info-card">
+              <h3 class="info-card__title">Big collection</h3>
+              <p class="info-card__text">
+                Lorem Ipsum is simply dummy text of the printing and Ipsum
+                typesetting industry.
+              </p>
+            </article>
           </li>
-          <li>
-            <h3>Top Resourse</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
+          <li class="about-us__item">
+            <article class="info-card">
+              <h3 class="info-card__title">Top Resourse</h3>
+              <p class="info-card__text">
+                Lorem Ipsum is simply dummy text of the printing and Ipsum
+                typesetting industry.
+              </p>
+            </article>
           </li>
-          <li>
-            <h3>Big community</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
+          <li class="about-us__item">
+            <article class="info-card">
+              <h3 class="info-card__title">Big community</h3>
+              <p class="info-card__text">
+                Lorem Ipsum is simply dummy text of the printing and Ipsum
+                typesetting industry.
+              </p>
+            </article>
           </li>
         </ul>
-        <a href="#">Read more</a>
+        <a href="#" class="button button--extra-large">Read more</a>
       </section>
-      <section>
-        <h2>Our team</h2>
-        <article>
-          <a href="#"><img src="ava1.jpg" alt="employee" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+      <section class="our-team">
+        <h2 class="our-team__title">Our team</h2>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava1.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"><img src="ava2.jpg" alt="employee 2" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava2.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"><img src="ava3.jpg" alt="employee3" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava3.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"><img src="ava4.jpg" alt="employee4" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava4.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"><img src="ava5.jpg" alt="employee5" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava5.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"><img src="ava6.jpg" alt="employee6" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava6.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
-        <article>
-          <a href="#"><img src="ava7.jpg" alt="employee7" /></a>
-          <h3>Jason Smith</h3>
-          <span>Co - Founder</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="twitter/bina.jpg" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="fc/bina.jpg" alt="fc logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="tg/bina.jpg" alt="tg logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="in/bina.jpg" alt="in logo" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="ins/bina.jpg" alt="instagram logo" />
-          </a>
+        <article class="profile">
+          <a href="#"
+            ><img src="ava7.jpg" class="profile__avatar" alt="employee"
+          /></a>
+          <h3 class="profile__name">Jason Smith</h3>
+          <span class="profile__position">Co - Founder</span>
+          <div class="icon">
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="in/bina.jpg" class="icon-img" alt="in logo" />
+            </a>
+            <a
+              href="#"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ins/bina.jpg" class="icon-img" alt="instagram logo" />
+            </a>
+          </div>
         </article>
       </section>
-      <section>
-        <h2>FAQs</h2>
-        <details>
-          <summary>What are the NFTs?</summary>
-          <p>
+      <section class="faqs">
+        <h2 class="faqs__title">FAQs</h2>
+        <details class="accordion">
+          <summary class="accordion__header">What are the NFTs?</summary>
+          <p class="accordion__content">
             Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
             Nulla dapibus urna volutpat venenatis, risus faucibus.
           </p>
         </details>
-        <details>
-          <summary>How do i get NFTs?</summary>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <details class="accordion">
+          <summary class="accordion__header">How do i get NFTs?</summary>
+          <p class="accordion__content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
         </details>
-        <details>
-          <summary>How can we buy your NFTs?</summary>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <details class="accordion">
+          <summary class="accordion__header">How can we buy your NFTs?</summary>
+          <p class="accordion__content">Lorem ipsum dolor sit amet.</p>
         </details>
-        <details>
-          <summary>Who are the team behind the project?</summary>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <details class="accordion">
+          <summary class="accordion__header">
+            Who are the team behind the project?
+          </summary>
+          <p class="accordion__content">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
         </details>
       </section>
     </main>
-    <footer>
-      <a href="#"> <img src="logo/bina.jpg" alt="Binabox logo" /></a>
-      <p>We are the best way to check the rarity of NFT collection.</p>
-      <h2>Subscribe</h2>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Contact us</a></li>
+    <footer class="footer">
+      <a href="#"
+        ><img
+          src="logo/bina.jpg"
+          class="logo logo--secondary"
+          alt="Binabox logo"
+      /></a>
+      <p class="footer__text">
+        We are the best way to check the rarity of NFT collection.
+      </p>
+      <h2 class="footer__title">Subscribe</h2>
+      <nav class="footer-nav">
+        <ul class="footet-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Home</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Blog</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Catalog</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Contact us</a>
+          </li>
         </ul>
       </nav>
-      <h2>Company</h2>
-      <nav>
-        <ul>
-          <li><a href="#">Terms Canditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Whitepaper</a></li>
-          <li><a href="#">Help Center</a></li>
+      <h2 class="footer__title">Company</h2>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Terms Canditions</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Privacy Policy</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Whitepaper</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Help Center</a>
+          </li>
         </ul>
       </nav>
-      <p>BINABOX 2022 - ALL rights reserved</p>
-      <div>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="twitter/bina.jpg" alt="twitter logo" />
+      <p class="footer__text">BINABOX 2022 - ALL rights reserved</p>
+      <div class="icon">
+        <a
+          href="#"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="twitter/bina.jpg" class="icon-img" alt="twitter logo" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="fc/bina.jpg" alt="fc logo" />
+        <a
+          href="#"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="fc/bina.jpg" class="icon-img" alt="fc logo" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="tg/bina.jpg" alt="tg logo" />
+        <a
+          href="#"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="tg/bina.jpg" class="icon-img" alt="tg logo" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="yt/bina.jpg" alt="yt logo" />
+        <a
+          href="#"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="yt/bina.jpg" class="icon-img" alt="yt logo" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="tiktok/bina.jpg" alt="tiktok logo" />
+        <a
+          href="#"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="tiktok/bina.jpg" class="icon-img" alt="tiktok logo" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="discord/bina.jpg" alt="discord logo" />
+        <a
+          href="#"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="discord/bina.jpg" class="icon-img" alt="discord logo" />
         </a>
       </div>
     </footer>
