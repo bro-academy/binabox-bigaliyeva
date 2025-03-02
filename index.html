@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BinaBox</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/">
     <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <body>
     <header class="header">
       <a href="#">
@@ -28,26 +31,26 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="button button--large">Discord</a>
-      <button type="button" class="button button--large">Connect</button>
+      <a href="#" class="button button--primary">Discord</a>
+      <button type="button" class="button button--secondary">Connect</button>
     </header>
     <main>
       <section class="banner">
         <h1 class="banner__title">
-          WITH <span>BINABOX EXPLORE</span>
-          NFT COLLECTION
+          WITH <span>BINABOX</span>
+          EXPLORE NFT COLLECTION
         </h1>
         <p class="banner__text">
           We are the best way to check the rarity of NFT collection
         </p>
         <span class="banner__stat banner__stat--number">2240+</span>
         <span class="banner__stat banner__stat--text">Total Iteam </span>
-        <span class="banner__stat banner__stat--number">P>1000</span>
+        <span class="banner__stat banner__stat--number">1000+</span>
         <span class="banner__stat banner__stat--text"
           >Profiles whitelisted
         </span>
-        <a href="#" class="button button--extra-large">Connect Wallet</a>
-        <a href="#" class="button button--extra-large">Whitelist now</a>
+        <a href="#" class="button button--extra-large-secondary">Connect Wallet</a>
+        <a href="#" class="button button--extra-large-primary">Whitelist now</a>
         <img src="banner.jpg" class="banner__logo" alt="banner logo" />
       </section>
       <section class="catalog">
@@ -56,6 +59,7 @@
         <a href="#" class="catalog__link">See all</a>
         <button type="button" class="button button--slider-left">left</button>
         <button type="button" class="button button--slider-right">right</button>
+        <div  class = "products-container">
         <article class="product">
           <div class="product__image">
             <a href="#"
@@ -68,8 +72,7 @@
         </article>
         <article class="product">
           <div class="product__image">
-            <a href="#"
-              ><img src="card2.jpg" alt="card2 image" />
+            <a href="#"><img src="card2.jpg" alt="card2 image" />
               <span class="badge badge--new">New</span>
               <p class="product__price">199$</p>
               <h3 class="product__name">Name Product</h3></a
@@ -106,6 +109,7 @@
             >
           </div>
         </article>
+      </div>
       </section>
       <section class="blog">
         <h2 class="blog__title">Our blog</h2>

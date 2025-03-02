@@ -1,0 +1,299 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.bakbak-one-regular {
+    font-family: "Bakbak One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+    .header {
+      display: block;
+      background-color: #0D0D15;
+      width: 100vw;
+      height: auto;  
+    }
+    .main-nav {
+      font-family: "Poppins",serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      margin-left: auto;
+      color:#f5f8fb;
+    }
+    .main-nav a {
+      color:#f5f8fb;
+      text-decoration: none;
+    }
+    nav ul{
+      list-style:none;
+      padding: 8px 20px;  
+      margin: 0;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+    .button {
+      padding: 10px;
+      font-family: "Poppins",sans-serif;
+      font-size: 18px;
+      height: 48px;
+    }
+
+  .button--primary a {
+      color:#f5f8fb;
+      text-decoration: none;
+    }
+    .button--primary {
+  display: inline-block;
+  width: 150px;
+  height: 48px;
+  background-color:#0D0D15;
+border: 2px solid  #D0D7FB2B;
+font-family: "Poppins",sans-serif; 
+font-size: 18px;
+font-weight: 600;
+color: #d0d7fb;
+line-height: 28px;
+text-align: center;
+}
+
+.button--secondary {
+  width: 159px;
+  background-color: #0265DC;
+  font-weight: 600;
+  color: #F5F8FB;
+  line-height: 28px;
+}
+.banner {
+  width: 100vw;
+  height: 640px;
+  padding: 64px 164px;
+  background: radial-gradient(ellipse, #0265DC 0%, #0D0D15 100% );
+}
+h1 {
+  width:866.5px;
+  height:124px;
+  font-family: "Bakbak One", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62px;
+  color:#F5F8FB;
+}
+h1 span {
+  color:#0265DC;
+}
+.banner__text{
+  width:866.5px;
+  height:28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color:#F5F8FB;
+}
+.banner__stat{
+  display:flex;
+  flex-direction:column;
+  align-items: left;
+  
+}
+  .banner__stat--number{
+  font-family: "Bakbak One", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62px;
+  color: #F5F8FB;
+}
+.banner__stat--text{
+  font-family:"Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#F5F8FB;
+}
+.button--extra-large-secondary a {
+  color:#F5F8FB;
+  text-decoration: none;
+}
+.button--extra-large-secondary {
+  display: inline-block;
+  width: 190px;
+  height: 48px;
+  padding: 10px 24px;
+  background-color: #0265DC;
+  font-family: "Poppins"sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F5F8FB;
+}
+.button--extra-large-primary a {
+  color:#F5F8FB;
+  text-decoration: none;
+}
+.button--extra-large-primary {
+  display: inline-block;
+  width: 172px;
+  height: 48px;
+  padding: 10px 24px;
+  border:  2px solid #D0D7FB2B;
+  background-color: #0D0D15;
+  font-family: "Poppins"sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F5F8FB;
+}
+h2{
+  font-family: "Bakbak One", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  color:#F8F7FF;
+  text-align: center;
+}
+.catalog{
+  width: 100vw;
+  height: 696px;
+  background-color: #0D0D15;
+}
+.catalog__title{
+font-family: "Bakbak One", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+color:#F8F7FF;
+text-align: left;
+}
+.catalog__link a {
+  color:#f5f8fb;
+  text-decoration: none;
+}
+.catalog__link{
+  width: 108px;
+  height: 48px;
+  padding: 10px 24px;
+  border: 2px solid #D0D7FB2B;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color:#f5f8fb;
+}
+/*.product {
+  width: 300.8px;
+  height: 480px;
+  padding: 24px;
+  gap:24px;
+  background-color: #1D1C28;
+}
+/*.products-container{
+  width: 100 vw;
+  height: 480px;
+  display:grid;
+}*/
+h3{
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color:#EFF5FAD1;
+  text-align: left;
+}
+.product__price{
+  font-family: "Bakbak One",sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  color:#F5F8FB
+  text-align: left;
+}
