@@ -31,6 +31,10 @@
           </li>
         </ul>
       </nav>
+      <form class="form-search">
+        <input type="text" class="placeholder" placeholder="search" />
+        <button type="submit"></button>
+      </form>
       <a href="#" class="button button--primary">Discord</a>
       <button type="button" class="button button--secondary">Connect</button>
     </header>
@@ -54,11 +58,13 @@
         <img src="banner.jpg" class="banner__logo" alt="banner logo" />
       </section>
       <section class="catalog">
+        <div class="catalog__slider">
         <img src="icon.jpg" class="icon-img" alt="icon catalog" />
         <h2 class="catalog__title">Catalog</h2>
         <a href="#" class="catalog__link">See all</a>
-        <button type="button" class="button button--slider-left">left</button>
-        <button type="button" class="button button--slider-right">right</button>
+        <button type="button" class="button button--slider-left"> < </button>
+        <button type="button" class="button button--slider-right"> > </button>
+      </div>
         <div  class = "products-container">
         <article class="product">
           <div class="product__image">

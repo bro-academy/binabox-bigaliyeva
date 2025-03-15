@@ -7,6 +7,8 @@
 
   body {
     font-family: "Poppins", Arial, sans-serif;
+    max-width: 1728px;
+    width:100%;
   }
 
   /* reset styles for links */
@@ -32,6 +34,10 @@ h1,h2,h3 {
   font-family: "Bakbak One", sans-serif;
   font-weight: 400;
 }
+.header {
+  height: 112px;
+  padding:32px;
+}
   /* navigation */
   .main-nav {
     list-style: none;
@@ -40,11 +46,47 @@ h1,h2,h3 {
     line-height: 24px;
     letter-spacing: 0;
     text-align: center;
+    width: 401px;
+    height: 40px;
   }
+
+.main-nav__list{
+  padding: 8px 20px;
+}
+
+.main-nav__link:hover { 
+  color:rgba(56, 146, 243, 1);
+}
+
+.main-nav__link:focus { 
+  border-bottom: 4px solid rgba(56, 146, 243, 1);
+  color:rgba(245, 248, 251, 1);
+}
+.main-nav__link:active {
+  color:rgba(0, 84, 182, 1);
+}
+ .main-nav__link:disabled{
+color:rgba(229, 236, 251, 0.36); 
+ }
+
+
+.placeholder{
+  width:188px;
+  height:48px;
+  border: 2px solid rgba(208, 215, 251, 0.17);
+  background-color: rgba(13, 13, 21, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  color:rgba(231, 238, 247, 0.66)
+}
+
 
   /* buttons */
   .button {
     color: rgba(245, 248, 251, 1);
+    height: 48px;
   }
 
   .button--primary {
@@ -54,7 +96,27 @@ h1,h2,h3 {
     text-align: center;
     letter-spacing: 0;
     border: 2px solid rgba(208, 215, 251, 0.17);
+    width:150px;
+    padding: 10px 24px;
   }
+.button--primary:hover, .button--extra-large-primary:hover, .catalog__link:hover, .button--slider-left:hover, .button--show-more:hover {
+  border: 2px solid rgba(191, 197, 238, 0.12);
+  background-color: rgba(191, 197, 238, 0.12);
+}
+.button--primary:focus, .button--extra-large-primary:focus, .catalog__link:focus, .button--slider-left:focus, .button--show-more:focus {
+  border: 4px solid rgba(56, 146, 243, 1);
+  background-color: rgba(191, 197, 238, 0.12); 
+}
+ 
+.button--primary:active, .button--extra-large-primary:active, .catalog__link:active, .button--slider-left:active, .button--show-more:active {
+  border: 2px solid rgba(191, 197, 238, 0.12); 
+  background-color: rgba(191, 197, 238, 0.12);
+}
+.button--primary:disabled .button--extra-large-primary:disabled, .catalog__link:disabled, .button--slider-left:disabled, .button--show-more:disabled {
+  border: 2px solid rgba(229, 236, 251, 0.36);
+  background-color: rgba(208, 215, 251, 0.17);
+  color: rgba(229, 236, 251, 0.36);
+}
 
   .button--secondary {
     font-size: 18px;
@@ -63,6 +125,27 @@ h1,h2,h3 {
     letter-spacing: 0;
     text-align: center;
     background-color: rgba(2, 101, 220, 1);
+    width:159px;
+    padding: 10px 24px;
+  }
+.button--secondary:hover, .button--extra-large-secondary:hover, .button--slider-right:hover {
+  background-color: rgba(56, 146, 243, 1);
+}
+
+.button--secondary:focus, .button--extra-large-secondary:focus, .button--slider-right:focus {
+  background-color:rgba(2, 101, 220, 1);
+  border: 4px solid rgba(56, 146, 243, 1); }
+
+  .button--secondary:active, .button--extra-large-secondary:active, .button--slider-right:active {
+    background-color: rgba(0, 84, 182, 1);
+  }
+  .button--secondary:disabled, .button--extra-large-secondary:disabled, .button--slider-right:disabled {
+    background-color:rgba(208, 215, 251, 0.17);
+    color: rgba(229, 236, 251, 0.36);
+  }
+
+ .catalog, .blog, .about-us,.our-team, .faqs, .footer{
+    padding: 64px;
   }
 
   /* hero banner */
@@ -78,6 +161,10 @@ h1,h2,h3 {
     color: rgba(2, 101, 220, 1);
   }
 
+  .banner{
+    height: 640px;
+    padding: 64px 164px;
+  }
   /* Hero banner text */
   .banner__text {
     font-size: 20px;
@@ -111,15 +198,18 @@ h1,h2,h3 {
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0;
+    padding: 10px 24px;
   }
 
   /* banner buttons */
   .button--extra-large-secondary {
     background-color: rgba(2, 101, 220, 1);
+    width: 190px;
   }
 
   .button--extra-large-primary {
     border: 2px solid rgba(208, 215, 251, 0.17);
+    width: 172px;
   }
 
   /* color of cards in sections */
@@ -144,6 +234,10 @@ h1,h2,h3 {
     color: rgba(248, 247, 255, 1);
     text-align: center;
   }
+.catalog{
+  height: 696px;
+  padding: 64px;
+}
 
   /* catalog section  */
   .catalog__title {
@@ -162,11 +256,19 @@ h1,h2,h3 {
     letter-spacing: 0;
     color: rgba(248, 247, 255, 1);
     border: 2px solid rgba(208, 215, 251, 0.17);
-    ;
+    width: 108px;
+    height: 48px;
+    padding: 10px 24px;
   }
 
+  .button--slider-left,  .button--slider-right {
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+  }
   /* slider buttons */
   .button--slider-left {
+    background-color: rgba(29, 28, 40, 1);
     border: 2px solid rgba(208, 215, 251, 0.17);
   }
 
@@ -174,7 +276,17 @@ h1,h2,h3 {
     background-color: rgba(2, 101, 220, 1);
   }
 
+  .product {
+    height: 480px;
+    width: 300.8px;
+    padding: 24px;}
+
   /* products descriptions */
+
+  .product__image{
+    width: 252px;
+    height: 324px;
+  }
   .product__price,
   .blog-card__title {
     font-family: "Bakbak One", sans-serif;
@@ -196,6 +308,20 @@ h1,h2,h3 {
     text-align: left;
   }
 
+  .blog{
+    height: 2136px;
+    padding: 64px;
+  }
+  .blog-card{
+    width: 784px;
+    height: 434px;
+    padding:24px;
+  }
+
+  .blog-card:first-of-type,  .blog-card:last-of-type {
+    height: 900px;
+  }
+
   /* blog section */
   .blog-card__author,
   .blog-card__date {
@@ -213,6 +339,7 @@ h1,h2,h3 {
     letter-spacing: 0;
     text-align: right;
     color: rgba(2, 101, 220, 1);
+    padding: 8px 10px;
   }
   .blog-card__text {
     font-size: 16px;
@@ -231,6 +358,9 @@ h1,h2,h3 {
     letter-spacing: 0;
     text-align: center;
     border: 2px solid rgba(208, 215, 251, 0.17);
+    width: 161px;
+    height: 40px;
+    padding: 8px 20px;
   }
 
   .button--show-more {
@@ -240,9 +370,15 @@ h1,h2,h3 {
     letter-spacing: 0;
     text-align: center;
     border: 2px solid rgba(208, 215, 251, 0.17);
+    width: 149px;
+    padding: 10px 24px;
   }
 
   /* section about us */
+  .about-us{
+    height: 848.72px;
+    padding: 64px;
+  }
   .about-us__text {
     font-size: 20px;
     font-weight: 500;
@@ -251,7 +387,11 @@ h1,h2,h3 {
     color: rgba(239, 245, 250, 0.82);
     text-align: center;
   }
-
+  .info-card{
+    width: 376px;
+    height: 234.32px;
+    padding: 32px;
+  }
    .info-card__title {
     font-size: 24px;
     line-height: 32px;
@@ -285,9 +425,13 @@ h1,h2,h3 {
     text-align: center;
   }
 
+  .faqs{
+    padding-bottom: 104px;
+  }
+
   /* faq */
   .accordion__header {
-    font-family: "Bakbak one", sans-serif;
+    font-family: "Bakbak One", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -304,6 +448,10 @@ h1,h2,h3 {
   }
 
   /* footer */
+
+  .footer{
+    padding-bottom: 32px;
+  }
   .footer__text {
     font-size: 14px;
     font-weight: 400;
