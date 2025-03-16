@@ -9,6 +9,7 @@
     font-family: "Poppins", Arial, sans-serif;
     max-width: 1728px;
     width: 100%;
+    background-color: rgba(13, 13, 21, 1);
   }
 
   /* reset styles for links */
@@ -17,19 +18,6 @@
     text-decoration: none;
   }
 
-  /* Background color for main sections */
-  .header,
-  .banner,
-  .catalog,
-  .blog,
-  .about-us,
-  .our-team,
-  .faqs,
-  .footer,
-  .our-blog,
-  .our-blog-page {
-    background-color: rgba(13, 13, 21, 1);
-  }
 
   /* Set the font style for all main headings (h1, h2, h3) */
   h1,
@@ -40,28 +28,29 @@
   }
 
   .header {
-    height: 112px;
     padding: 32px;
   }
 
   /* navigation */
   .main-nav {
-    list-style: none;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0;
     text-align: center;
-    width: 401px;
-    height: 40px;
   }
 
   .main-nav__list {
+    list-style: none;
+  }
+
+  .main-nav__link {
     padding: 8px 20px;
   }
 
   /* user actions with main menu*/
   .main-nav__link:hover {
+    border-bottom: 4px solid rgba(56, 146, 243, 1);
     color: rgba(56, 146, 243, 1);
   }
 
@@ -80,8 +69,6 @@
 
 
   .placeholder {
-    width: 188px;
-    height: 48px;
     border: 2px solid rgba(208, 215, 251, 0.17);
     background-color: rgba(13, 13, 21, 1);
     font-size: 14px;
@@ -95,7 +82,6 @@
   /* buttons */
   .button {
     color: rgba(245, 248, 251, 1);
-    height: 48px;
   }
 
   .button--primary {
@@ -105,7 +91,6 @@
     text-align: center;
     letter-spacing: 0;
     border: 2px solid rgba(208, 215, 251, 0.17);
-    width: 150px;
     padding: 10px 24px;
   }
 
@@ -158,7 +143,6 @@
     letter-spacing: 0;
     text-align: center;
     background-color: rgba(2, 101, 220, 1);
-    width: 159px;
     padding: 10px 24px;
   }
 
@@ -218,7 +202,6 @@
   }
 
   .banner {
-    height: 640px;
     padding: 64px 164px;
   }
 
@@ -261,12 +244,10 @@
   /* banner buttons */
   .button--extra-large-secondary {
     background-color: rgba(2, 101, 220, 1);
-    width: 190px;
   }
 
   .button--extra-large-primary {
     border: 2px solid rgba(208, 215, 251, 0.17);
-    width: 172px;
   }
 
   /* color of cards in sections */
@@ -293,7 +274,6 @@
   }
 
   .catalog {
-    height: 696px;
     padding: 64px;
   }
 
@@ -314,15 +294,11 @@
     letter-spacing: 0;
     color: rgba(248, 247, 255, 1);
     border: 2px solid rgba(208, 215, 251, 0.17);
-    width: 108px;
-    height: 48px;
     padding: 10px 24px;
   }
 
   .button--slider-left,
   .button--slider-right {
-    width: 48px;
-    height: 48px;
     padding: 16px;
   }
 
@@ -337,17 +313,15 @@
   }
 
   .product {
-    height: 480px;
-    width: 300.8px;
     padding: 24px;
   }
 
   /* products descriptions */
-
+  /* 
   .product__image {
     width: 252px;
     height: 324px;
-  }
+  } */
 
   .product__price,
   .blog-card__title,
@@ -371,20 +345,9 @@
     text-align: left;
   }
 
-  .blog {
-    height: 2136px;
-    padding: 64px;
-  }
 
   .blog-card {
-    width: 784px;
-    height: 434px;
     padding: 24px;
-  }
-
-  .blog-card:first-of-type,
-  .blog-card:last-of-type {
-    height: 900px;
   }
 
   /* blog section */
@@ -424,8 +387,6 @@
     letter-spacing: 0;
     text-align: center;
     border: 2px solid rgba(208, 215, 251, 0.17);
-    width: 161px;
-    height: 40px;
     padding: 8px 20px;
   }
 
@@ -436,13 +397,11 @@
     letter-spacing: 0;
     text-align: center;
     border: 2px solid rgba(208, 215, 251, 0.17);
-    width: 149px;
     padding: 10px 24px;
   }
 
   /* section about us */
   .about-us {
-    height: 848.72px;
     padding: 64px;
   }
 
@@ -456,8 +415,6 @@
   }
 
   .info-card {
-    width: 376px;
-    height: 234.32px;
     padding: 32px;
   }
 
@@ -551,7 +508,25 @@
     line-height: 16px;
     letter-spacing: 0;
     text-align: center;
-    color: rgba(245, 248, 251, 1)
+  }
+
+  .footer-nav__link:hover {
+    border-bottom: 4px solid rgba(56, 146, 243, 1);
+    color: rgba(56, 146, 243, 1);
+  }
+
+  .footer-nav__link:focus {
+    border-bottom: 4px solid rgba(56, 146, 243, 1);
+    radius: 5px;
+    padding: 4px;
+  }
+
+  .footer-nav__link:active {
+    color: rgba(0, 84, 182, 1);
+  }
+
+  .footer-nav__link:disabled {
+    color: rgba(229, 236, 251, 0.36);
   }
 
   /* blog page */
@@ -560,7 +535,6 @@
   }
 
   .our-blog {
-    height: 375.24px;
     padding: 64px 0;
   }
 
@@ -574,8 +548,6 @@
 
   .category,
   .tags {
-    width: 328px;
-    /* height: 384px; */
     padding: 24px;
     background-color: rgba(29, 28, 40, 1);
   }
@@ -609,8 +581,6 @@
   }
 
   .article__link {
-    width: 122px;
-    height: 48px;
     padding: 10px 24px;
     background-color: rgba(2, 101, 220, 1);
     font-size: 18px;
@@ -672,13 +642,11 @@
     color: rgba(229, 236, 251, 0.36);
   }
 
-  .article__item {
+  .article__list {
     list-style-image: url("icon_list.jpg");
   }
 
   .quote {
-    width: 1024px;
-    height: 132px;
     border-radius: 16px;
     background-color: rgba(0, 39, 84, 1);
     padding: 16px;
