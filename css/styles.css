@@ -94,6 +94,7 @@
     border: 2px solid rgba(208, 215, 251, 0.17);
     background-color: rgba(13, 13, 21, 1);
   }
+
   .button--extra-large {
     font-size: 16px;
     font-weight: 600;
@@ -101,16 +102,18 @@
     letter-spacing: 0;
     padding: 8px 20px;
   }
+
   .button--secondary {
     background-color: rgba(2, 101, 220, 1);
   }
 
-  .button--extra-large, .button--tag {
+  .button--extra-large,
+  .button--tag {
     background-color: rgba(29, 28, 40, 1);
   }
 
   /* user actions with  dark buttons */
-  .button--primary:hover  {
+  .button--primary:hover {
     border: 2px solid rgba(191, 197, 238, 0.12);
     background-color: rgba(191, 197, 238, 0.12);
   }
@@ -274,16 +277,16 @@
     text-align: left;
   }
 
-.product {
-  padding: 24px;
-  margin-right: 24px;
-}
+  .product {
+    padding: 24px;
+    margin-right: 24px;
+  }
 
-.product:last-of-type {
-  margin-right: 0;
-}
+  .product:last-of-type {
+    margin-right: 0;
+  }
 
-  
+
   /* blog section */
   .blog-card__author,
   .blog-card__date {
@@ -318,11 +321,12 @@
     margin-bottom: 32px;
   }
 
-  .blog-card:nth-of-type(odd){
-    margin-right:32px;
+  .blog-card:nth-of-type(odd) {
+    margin-right: 32px;
   }
-  .blog-card:nth-of-type(even){
-    margin-right:0;
+
+  .blog-card:nth-of-type(even) {
+    margin-right: 0;
   }
 
   /* section about us */
@@ -339,7 +343,8 @@
     padding: 32px;
     margin-right: 32px;
   }
-/* 
+
+  /* 
   .info-card:last-of-type {
     margin-right: 0px;
   }  */
