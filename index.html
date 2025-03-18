@@ -31,8 +31,12 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="button button--primary">Discord</a>
-      <button type="button" class="button button--secondary">Connect</button>
+      <form class="search-form">
+        <button type="submit" class="search-button"></button>
+        <input type="text" class="search-input" placeholder="search" />
+      </form>
+      <a href="#" class="button button--primary button--medium">Discord</a>
+      <button type="button" class="button button--secondary button--medium">Connect</button>
     </header>
     <main>
       <section class="banner">
@@ -49,17 +53,19 @@
         <span class="banner__stat banner__stat--text"
           >Profiles whitelisted
         </span>
-        <a href="#" class="button button--extra-large-secondary">Connect Wallet</a>
-        <a href="#" class="button button--extra-large-primary">Whitelist now</a>
+        <a href="#" class="button button--secondary button--large">Connect Wallet</a>
+        <a href="#" class="button button--primary button--large">Whitelist now</a>
         <img src="banner.jpg" class="banner__logo" alt="banner logo" />
       </section>
       <section class="catalog">
+        <div class="catalog__slider">
         <img src="icon.jpg" class="icon-img" alt="icon catalog" />
         <h2 class="catalog__title">Catalog</h2>
-        <a href="#" class="catalog__link">See all</a>
-        <button type="button" class="button button--slider-left">left</button>
-        <button type="button" class="button button--slider-right">right</button>
-        <div  class = "products-container">
+        <a href="#" class="button button--primary button--small">See all</a>
+        <button type="button" class="button button--primary button--extra-small"> < </button>
+        <button type="button" class="button button--secondary button--extra-small"> > </button>
+      </div>
+        <div class = "products-container">
         <article class="product">
           <div class="product__image">
             <a href="#"
@@ -127,7 +133,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#" class="button button--expand">Read more</a>
+          <a href="#" class="button button--primary button--extra-large">Read more</a>
         </article>
         <article class="blog-card">
           <div class="blog-card__image">
@@ -143,7 +149,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#" class="button button--expand">Read more</a>
+          <a href="#" class="button button--primary button--extra-large">Read more</a>
         </article>
         <article class="blog-card">
           <div class="blog-card__image">
@@ -159,7 +165,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#" class="button button--expand">Read more</a>
+          <a href="#" class="button button--primary button--extra-large">Read more</a>
         </article>
         <article class="blog-card">
           <div class="blog-card__image">
@@ -175,7 +181,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#" class="button button--expand">Read more</a>
+          <a href="#" class="button button--primary button--extra-large">Read more</a>
         </article>
         <article class="blog-card">
           <div class="blog-card__image">
@@ -191,7 +197,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#" class="button button--expand">Read more</a>
+          <a href="#" class="button button--primary button--extra-large">Read more</a>
         </article>
         <article class="blog-card">
           <div class="blog-card__image">
@@ -207,9 +213,9 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#" class="button button--expand">Read more</a>
+          <a href="#" class="button button--primary button--extra-large">Read more</a>
         </article>
-        <a href="#" class="button button--show-more">Read more</a>
+        <a href="#" class="button button--primary button--medium">Read more</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">About us</h2>
@@ -258,7 +264,7 @@
             </article>
           </li>
         </ul>
-        <a href="#" class="button button--show-more">Read more</a>
+        <a href="#" class="button button--primary button--medium">Read more</a>
       </section>
       <section class="our-team">
         <h2 class="our-team__title">Our team</h2>
