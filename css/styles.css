@@ -40,7 +40,8 @@
     text-align: center;
   }
 
-  .main-nav__list {
+  .main-nav__list,
+  .category__list {
     list-style: none;
   }
 
@@ -215,7 +216,7 @@
   .banner {
     padding: 64px 164px;
     background-color: rgba(13, 13, 21, 1);
-    background-image: radial-gradient(ellipse, rgba(2, 101, 220, 1) 0%, rgba(2, 101, 220, 0) 100%), url('../images/banner.webp');
+    background-image: radial-gradient(ellipse, rgba(2, 101, 220, 1) 0%, rgba(2, 101, 220, 0) 100%), url('../images/cube-banner.webp');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
@@ -591,6 +592,10 @@ background-size: 70px 90.85px, 80px 103.83px; */
 
   .our-blog {
     padding: 64px 0;
+    background-image: url('../images/banner.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .breadcrumb__list {
