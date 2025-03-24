@@ -40,7 +40,8 @@
     text-align: center;
   }
 
-  .main-nav__list {
+  .main-nav__list,
+  .category__list {
     list-style: none;
   }
 
@@ -214,7 +215,13 @@
 
   .banner {
     padding: 64px 164px;
+    background-color: rgba(13, 13, 21, 1);
+    background-image: radial-gradient(ellipse, rgba(2, 101, 220, 1) 0%, rgba(2, 101, 220, 0) 100%), url('../images/cube-banner.webp');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
   }
+
 
   /* Hero banner text */
   .banner__text {
@@ -251,7 +258,7 @@
     background-color: rgba(29, 28, 40, 1);
   }
 
-  .about-us,
+  .about-us__item,
   .footer {
     background-color: rgba(26, 25, 37, 1);
   }
@@ -375,9 +382,73 @@
   }
 
   .info-card {
+    position: relative;
     padding: 32px;
     margin-right: 32px;
+    width: 376px;
+    height: 206px;
+    margin-right: 32px;
+    margin-bottom: 40px;
+    /* background-image: 
+  url('../images/glow-top.png'),
+  url('../images/glow-bottom.png');
+background-repeat: no-repeat;
+background-position: top left, bottom right;
+background-size: 70px 90.85px, 80px 103.83px; */
   }
+
+  /*info card style */
+  .info-card::before {
+    position: absolute;
+    width: 70px;
+    height: 90.85px;
+    content: '';
+    background-image: url('../images/glow-top.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    top: 0px;
+    left: 0px;
+  }
+
+  .info-card::after {
+    position: absolute;
+    width: 80px;
+    height: 103.83px;
+    content: '';
+    background-image: url('../images/glow-bottom.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  /*numbering style */
+  .about-us__list {
+    list-style: none;
+    counter-reset: section;
+    padding: 0;
+  }
+
+  .about-us__item {
+    position: relative;
+    counter-increment: section;
+  }
+
+  .about-us__item::before {
+    content: "0" counter(section);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 72px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(2, 101, 220, 1);
+    /* text-stroke: 1px rgba(2, 101, 220, 1);  */
+    z-index: 0;
+    pointer-events: none;
+  }
+
+
 
   /* 
   .info-card:last-of-type {
@@ -400,6 +471,15 @@
   }
 
   /* section our team */
+  .profile__avatar {
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    object-fit: cover;
+    top: -7px;
+    left: -6px;
+  }
+
   .profile__name {
     font-size: 24px;
     line-height: 32px;
@@ -422,6 +502,12 @@
   }
 
   /* faq */
+
+  .accordion {
+    padding: 24px 24px 32px;
+    margin-bottom: 16px;
+  }
+
   .accordion__header {
     font-family: "Bakbak One", sans-serif;
     font-size: 24px;
@@ -429,6 +515,9 @@
     line-height: 32px;
     letter-spacing: 0;
     color: rgba(245, 248, 251, 1);
+    padding-top: 0px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(191, 197, 238, 0.12);
   }
 
   .accordion__content {
@@ -503,6 +592,10 @@
 
   .our-blog {
     padding: 64px 0;
+    background-image: url('../images/banner.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .breadcrumb__list {
