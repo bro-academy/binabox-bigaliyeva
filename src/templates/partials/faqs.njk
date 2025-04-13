@@ -1,0 +1,10 @@
+<section class="faqs">
+  <h2 class="faqs__title">FAQs</h2>
+
+  {% for faq in faqs %}
+  <details class="accordion">
+    <summary class="accordion__header">{{ faq.question }}</summary>
+    <p class="accordion__content">{{ faq.answer }}</p>
+  </details>
+  {% endfor %}
+</section>

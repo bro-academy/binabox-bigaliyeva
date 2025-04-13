@@ -1,0 +1,36 @@
+<section class="blog">
+  <h2 class="blog__title">{{ blog.title }}</h2>
+
+  {% for article in blog.articles %}
+  <article class="blog-card">
+    <div class="blog-card__image">
+      <img
+        src="/img/{{ article.image }}-1x.webp"
+        width="736"
+        height="198"
+        alt="{{ article.title | lower }}"
+        srcset="/img/{{ article.image }}-1x.webp, /img/{{ article.image }}-2x.webp 2x"
+      />
+      <span class="badge badge--nft">{{ article.badge }}</span>
+    </div>
+
+    <img src="/img/icons/user.svg" class="icon-img" alt="icon human" />
+    <p class="blog-card__author">{{ article.author }}</p>
+
+    <img src="/img/icons/calendar.svg" class="icon-img" alt="icon calendar" />
+    <time datetime="{{ article.date }}" class="blog-card__date">{{
+      article.dateText
+    }}</time>
+
+    <h3 class="blog-card__title">{{ artipcle.title }}</h3>
+    <p class="blog-card__text">{{ article.text }}</p>
+
+    <a href="#" class="button button--primary button--extra-large">{{
+      blog.readMoreBtn
+    }}</a>
+  </article>
+  {% endfor %}
+  <a href="#" class="button button--primary button--medium">{{
+    blog.readMoreBtn
+  }}</a>
+</section>

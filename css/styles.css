@@ -278,6 +278,10 @@
   } */
 
   /* catalog section  */
+
+.catalog {
+  background-color: rgba(13, 13, 21, 1)
+}
   .catalog__title {
     font-size: 24px;
     font-weight: 400;
@@ -573,7 +577,7 @@ background-size: 70px 90.85px, 80px 103.83px; */
 
   .footer-nav__link:focus {
     border-bottom: 4px solid rgba(56, 146, 243, 1);
-    radius: 5px;
+    /* radius: 5px; */
     padding: 4px;
   }
 
