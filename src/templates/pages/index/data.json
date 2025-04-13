@@ -1,4 +1,275 @@
 {
-  "title": "test",
-  "h1": ""
+  "nav": [
+    { "text": "Home", "url": "/" },
+    { "text": "Blog", "url": "/blog/" },
+    { "text": "Catalog", "url": "/catalog/" },
+    { "text": "Contact us", "url": "/contact/" }
+  ],
+  "banner": {
+    "highlight": "BINABOX",
+    "title": " EXPLORE NFT COLLECTION",
+    "text": "We are the best way to check the rarity of NFT collection",
+    "stats": [
+      { "value": "2240+", "label": "Total Iteam" },
+      { "value": "1000+", "label": "Profiles whitelisted" }
+    ],
+    "image": "cube-banner",
+    "imageAlt": "banner logo"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "buttonSeeAll": "See all",
+    "products": [
+      {
+        "image": "skeleton",
+        "name": "Skeleton",
+        "price": "199$",
+        "badge": "new",
+        "badgeClass": "badge--new"
+      },
+      {
+        "image": "cat",
+        "name": "Cat",
+        "price": "199$",
+        "badge": "New",
+        "badgeClass": "badge--new"
+      },
+      {
+        "image": "scissors",
+        "name": "Scissors",
+        "price": "199$",
+        "badge": "Sold out",
+        "badgeClass": "badge--sold-out"
+      },
+      {
+        "image": "cyber-card",
+        "name": "Cyber Card",
+        "price": "199$",
+        "badge": "New",
+        "badgeClass": "badge--new"
+      },
+      {
+        "image": "cyber-box",
+        "name": "Cyber Box",
+        "price": "199$",
+        "badge": "New",
+        "badgeClass": "badge--new"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Our blog",
+    "readMoreBtn": "Read more",
+    "articles": [
+      {
+        "image": "aqua-mindset",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      },
+      {
+        "image": "gorilla",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      },
+      {
+        "image": "duck",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      },
+      {
+        "image": "skeleton",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      },
+      {
+        "image": "cat-crop",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      },
+      {
+        "image": "cyber-box",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "items": [
+      {
+        "title": "High quality",
+        "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Big collection",
+        "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Top Resource",
+        "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Big community",
+        "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      }
+    ],
+    "buttonText": "Read more"
+  },
+  "team": [
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    },
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    },
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    },
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    },
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    },
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    },
+    {
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "avatar": "jason-smith-ava",
+      "socials": [
+        { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+        { "icon": "facebook", "alt": "fc logo", "url": "#" },
+        { "icon": "telegram", "alt": "tg logo", "url": "#" },
+        { "icon": "linkedIn", "alt": "in logo", "url": "#" },
+        { "icon": "instagram", "alt": "instagram logo", "url": "#" }
+      ]
+    }
+  ],
+  "footer": {
+    "logo": "logo-blue",
+    "text": "We are the best way to check the rarity of NFT collection.",
+    "subscribeTitle": "Subscribe",
+    "navMain": [
+      { "label": "Home", "url": "#" },
+      { "label": "Blog", "url": "#" },
+      { "label": "Catalog", "url": "#" },
+      { "label": "Contact us", "url": "#" }
+    ],
+    "companyTitle": "Company",
+    "navCompany": [
+      { "label": "Terms Conditions", "url": "#" },
+      { "label": "Privacy Policy", "url": "#" },
+      { "label": "Whitepaper", "url": "#" },
+      { "label": "Help Center", "url": "#" }
+    ],
+    "copyright": "BINABOX 2022 - ALL rights reserved",
+    "socials": [
+      { "icon": "twitter", "alt": "twitter logo", "url": "#" },
+      { "icon": "facebook", "alt": "fc logo", "url": "#" },
+      { "icon": "telegram", "alt": "tg logo", "url": "#" },
+      { "icon": "youtube", "alt": "yt logo", "url": "#" },
+      { "icon": "ticktok", "alt": "tiktok logo", "url": "#" },
+      { "icon": "discord", "alt": "discord logo", "url": "#" }
+    ]
+  },
+
+  "faqs": [
+    {
+      "question": "What are the NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How do I get NFTs?",
+      "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+      "question": "How can we buy your NFTs?",
+      "answer": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "question": "Who are the team behind the project?",
+      "answer": "Lorem ipsum dolor sit amet consectetur."
+    }
+  ]
 }

@@ -1,0 +1,11 @@
+<nav class="main-nav">
+  <ul class="main-nav__list">
+    {% for item in nav %}
+    <li
+      class="main-nav__item {% if item.selected %}main-nav__item--selected{% endif %}"
+    >
+      <a href="{{ item.url }}" class="main-nav__link">{{ item.text }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

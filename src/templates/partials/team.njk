@@ -1,0 +1,30 @@
+<section class="our-team">
+  <h2 class="our-team__title">Our team</h2>
+
+  {% for member in team %}
+    <article class="profile">
+      <a href="#">
+        <img
+          src="/img/{{ member.avatar }}-1x.webp"
+          class="profile__avatar"
+          srcset="/img/{{ member.avatar }}-1x.webp, /images/{{ member.avatar2x }}-2x.webp -2x" 
+          alt="{{ member.name }}"
+        />
+      </a>
+      <h3 class="profile__name">{{ member.name }}</h3>
+      <span class="profile__position">{{ member.position }}</span>
+      <div class="icon">
+        {% for social in member.socials %}
+          <a
+            href="{{ social.url }}"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/img/icons/{{ social.icon }}.svg" class="icon-img" alt="{{ social.alt }}" />
+          </a>
+        {% endfor %}
+      </div>
+    </article>
+  {% endfor %}
+</section>

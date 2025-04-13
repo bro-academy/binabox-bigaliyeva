@@ -1,5 +1,18 @@
 {% extends "layouts/base.njk" %}
-
 {% block content %}
-index page content
+
+  {% include "partials/banner.njk" %} 
+
+  {% include "partials/catalog.njk" %}
+
+  {% include "partials/blog.njk" %}
+
+  {% include "partials/aboutus.njk" %}
+
+  {% include "partials/team.njk" %}
+  
+  {% include "partials/faqs.njk" %}
+   
 {% endblock %}
+{% set title = "Test page" %}
+{{ title }}

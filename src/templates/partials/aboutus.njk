@@ -1,0 +1,19 @@
+<section class="about-us">
+  <h2 class="about-us__title">{{ about.title }}</h2>
+  <p class="about-us__text">{{ about.text }}</p>
+
+  <ol class="about-us__list">
+    {% for item in about.items %}
+    <li class="about-us__item">
+      <article class="info-card">
+        <h3 class="info-card__title">{{ item.title }}</h3>
+        <p class="info-card__text">{{ item.text }}</p>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <a href="#" class="button button--primary button--medium">{{
+    about.buttonText
+  }}</a>
+</section>
