@@ -1,0 +1,82 @@
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @mixin nav-link-style($light-blue, $blue, $gray) {
+    &:hover {
+      border-bottom: 4px solid $light-blue;
+      color: $light-blue;
+    }
+  
+    &:focus {
+      border-bottom: 4px solid $light-blue;
+      color: $white;
+    }
+  
+    &:active {
+      color: $blue;
+    }
+  
+    &:disabled {
+      color: $gray;
+    }
+  }
+  @mixin button-style(
+    $bg-color,
+    $text-color,
+    $border: none,
+    $hover-bg: null,
+    $focus-border: null,
+    $active-bg: null,
+    $disabled-bg: null,
+    $disabled-color: null
+  ) {
+    font-size: $size-m;
+    font-weight: $font-weight-semibold;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    padding: 10px 24px;
+    color: $white;
+    background-color: $primary-color;
+    border: $dark-gray;
+    cursor: pointer;
+    font-family: $font-base;
+  
+    &:hover {
+      @if $dark-blue {
+        background-color: $dark-blue;
+      }
+    }
+  
+    &:focus {
+      @if $light-blue {
+        border: 4px solid $light-blue;
+      }
+    }
+  
+    &:active {
+      @if $dark-blue {
+        background-color: $dark-blue;
+      }
+    }
+  
+    &:disabled {
+      @if $dark-gray {
+        background-color: $dark-gray;
+      }
+      @if $gray {
+        color: $gray;
+      }
+    }
+  }
+  
+
