@@ -1,0 +1,48 @@
+h1 {
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    color: rgba(245, 248, 251, 1);
+    margin: 0;
+  }
+
+  h1 span {
+    color: rgba(2, 101, 220, 1);
+  }
+
+  .banner {
+    padding: 64px 164px;
+    background-color: rgba(13, 13, 21, 1);
+    background-image: radial-gradient(ellipse, rgba(2, 101, 220, 1) 0%, rgba(2, 101, 220, 0) 100%), url('../images/cube-banner.webp');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+  }
+
+
+  /* Hero banner text */
+  .banner__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: rgba(245, 248, 251, 1);
+  }
+
+  /* Banner statistics */
+  .banner__stat--number {
+    font-family: "Bakbak One", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    color: rgba(245, 248, 251, 1)
+  }
+
+  .banner__stat--text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: rgba(239, 245, 250, 0.82);
+  }

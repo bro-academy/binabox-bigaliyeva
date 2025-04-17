@@ -31,52 +31,26 @@
     }
   }
   @mixin button-style(
-    $bg-color,
-    $text-color,
-    $border: none,
-    $hover-bg: null,
-    $focus-border: null,
-    $active-bg: null,
-    $disabled-bg: null,
-    $disabled-color: null
-  ) {
-    font-size: $size-m;
-    font-weight: $font-weight-semibold;
-    line-height: $size-xxl;
-    letter-spacing: 0;
-    padding: 10px 24px;
-    color: $white;
-    background-color: $primary-color;
-    border: $dark-gray;
-    cursor: pointer;
-    font-family: $font-base;
-  
-    &:hover {
-      @if $dark-blue {
-        background-color: $dark-blue;
-      }
-    }
-  
-    &:focus {
-      @if $light-blue {
-        border: 4px solid $light-blue;
-      }
-    }
-  
-    &:active {
-      @if $dark-blue {
-        background-color: $dark-blue;
-      }
-    }
-  
-    &:disabled {
-      @if $dark-gray {
-        background-color: $dark-gray;
-      }
-      @if $gray {
-        color: $gray;
-      }
-    }
-  }
+  $bg-color,
+  $text-color,
+  $border: none,
+  $font-size: $size-m,
+  $font-weight: $font-weight-semibold,
+  $line-height: 28px,
+  $padding: 10px 24px
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: 0;
+  padding: $padding;
+  color: $text-color;
+  background-color: $bg-color;
+  border: $border;
+  cursor: pointer;
+}
+
+ 
+ 
   
 

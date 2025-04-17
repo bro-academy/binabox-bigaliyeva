@@ -1,0 +1,72 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.button {
+  @include button-style(
+    $primary-color,
+    $white,
+    none
+  );
+}
+
+.button--primary {
+  @include button-style(
+    $primary-color,
+    $white,
+    2px solid $dark-gray
+  );
+
+  &:hover,
+  &:active {
+    border: 2px solid $dark-blue;
+    background-color: $dark-blue;
+  }
+
+  &:focus {
+    border: 4px solid $light-blue;
+    background-color: $dark-blue;
+  }
+
+  &:disabled {
+    border: 2px solid $gray;
+    background-color: $dark-gray;
+    color: $gray;
+  }
+}
+
+.button--secondary {
+  @include button-style(
+    $light-blue,
+    $white
+  );
+
+  &:hover {
+    background-color: $light-blue;
+  }
+
+  &:focus {
+    background-color: $primary-color;
+    border: 4px solid $light-blue;
+  }
+
+  &:active {
+    background-color: $blue;
+  }
+
+  &:disabled {
+    background-color: $dark-gray;
+    color: $gray;
+  }
+}
+
+.button--extra-large {
+  font-size: $size-s;
+  font-weight: $font-weight-semibold;
+  line-height: 24px;
+  padding: 8px 20px;
+}
+
+.button--extra-large,
+.button--tag {
+  background-color: rgba(29, 28, 40, 1);
+}

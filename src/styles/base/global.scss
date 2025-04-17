@@ -4,3 +4,19 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    font-family: $font-base;
+    max-width: 1728px;
+    width: 100%;
+    background-color: $primary-color;
+  }
+  a {
+    color:$white;
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: $font-accent;
+    font-weight:$font-weight-regular;
+  }
