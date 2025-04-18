@@ -1,0 +1,23 @@
+@use '../base/variables' as *;
+.catalog {
+    padding: 64px;
+  
+&__title {
+    font-size: $size-xl;
+    font-weight: $font-weight-regular;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: $white;
+    text-align: left;
+  }
+
+  &__link {
+    font-size: $size-m;
+    font-weight: $font-weight-semibold;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    color: $white;
+    border: $border-line solid $dark-gray;
+    padding: 10px 24px;
+  }
+}

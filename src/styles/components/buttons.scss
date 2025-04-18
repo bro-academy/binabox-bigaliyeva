@@ -1,5 +1,5 @@
-@use '../base/variables' as *;
 @use '../base/mixins' as *;
+@use '../base/variables' as *;
 
 .button {
   @include button-style(
@@ -8,7 +8,6 @@
     none
   );
 }
-
 .button--primary {
   @include button-style(
     $primary-color,
@@ -62,11 +61,11 @@
 .button--extra-large {
   font-size: $size-s;
   font-weight: $font-weight-semibold;
-  line-height: 24px;
+  line-height: $size-xl;
   padding: 8px 20px;
 }
 
 .button--extra-large,
 .button--tag {
-  background-color: rgba(29, 28, 40, 1);
+  background-color: $secondary-color;
 }

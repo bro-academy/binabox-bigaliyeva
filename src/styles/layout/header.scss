@@ -1,23 +1,7 @@
-@use '../abstracts/variables' as *;
+@use '../base/variables' as *;
 .header {
     padding: 32px;
-  }
-  
-  /* Navigation */
-  .main-nav {
-    font-weight: $font-weight-semibold;
-    font-size: $base-size; // 16px
-    line-height: $size-xl;
-    letter-spacing: 0;
-    text-align: center;
-  }
-  
-  .main-nav__list,
-  .category__list {
-    list-style: none;
-  }
-  
-  .main-nav__link {
-    padding: 8px 20px;
-    display: flex;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
   }

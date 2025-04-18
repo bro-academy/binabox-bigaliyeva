@@ -1,0 +1,25 @@
+@use '../base/variables' as *;
+ .main-nav {
+    font-weight: $font-weight-semibold;
+    font-size: $base-size; // 16px
+    line-height: $size-xl;
+    letter-spacing: 0;
+    text-align: center;
+  
+  &__list{
+    list-style: none;
+    display:flex;
+    align-items: center;
+  }
+  
+  &__link {
+    padding: 8px 20px;
+    display: flex;
+  }
+}
+  // .navigations {
+  //   display:flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   gap: $base-size;
+  // }

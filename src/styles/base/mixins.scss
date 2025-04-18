@@ -1,4 +1,4 @@
-
+@use 'variables' as *;
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
   $bg-color,
   $text-color,
   $border: none,
-  $font-size: $size-m,
+  $font-size: 24px,
   $font-weight: $font-weight-semibold,
   $line-height: 28px,
   $padding: 10px 24px
@@ -49,8 +49,3 @@
   border: $border;
   cursor: pointer;
 }
-
- 
- 
-  
-

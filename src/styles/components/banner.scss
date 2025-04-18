@@ -1,48 +1,51 @@
+@use '../base/variables' as *;
 h1 {
-    font-size: 52px;
+    font-size: $size-4xl;
     line-height: 62px;
     letter-spacing: -0.5px;
-    color: rgba(245, 248, 251, 1);
+    color: $white;
     margin: 0;
   }
 
   h1 span {
-    color: rgba(2, 101, 220, 1);
+    color: $bright-blue;
   }
 
   .banner {
     padding: 64px 164px;
-    background-color: rgba(13, 13, 21, 1);
-    background-image: radial-gradient(ellipse, rgba(2, 101, 220, 1) 0%, rgba(2, 101, 220, 0) 100%), url('../images/cube-banner.webp');
+    background-color: $primary-color;
+    background-image: radial-gradient(ellipse, $bright-blue 0%,  $bright-blue-transparent 100%), url('../images/cube-banner.webp');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
-  }
-
-
+  
   /* Hero banner text */
-  .banner__text {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
+  &__text {
+    font-size: $size-l;
+    font-weight: $font-weight-medium;
+    line-height: $size-xxl;
     letter-spacing: 0;
-    color: rgba(245, 248, 251, 1);
+    color: $white;
   }
 
   /* Banner statistics */
-  .banner__stat--number {
-    font-family: "Bakbak One", sans-serif;
-    font-size: 52px;
-    font-weight: 400;
+  &__stat--number {
+    font-family: $font-accent;
+    font-size: $size-4xl;
+    font-weight: $font-weight-regular;
     line-height: 62px;
     letter-spacing: -0.5px;
-    color: rgba(245, 248, 251, 1)
+    color: $white;
   }
 
-  .banner__stat--text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  &__stat--text {
+    font-size: $base-size;
+    font-weight: $font-weight-regular;
+    line-height: $size-xl;
     letter-spacing: 0;
-    color: rgba(239, 245, 250, 0.82);
+    color: $soft-white;
   }
+  &__logo{
+    display:inline-block;
+  }
+}
