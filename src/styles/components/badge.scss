@@ -1,0 +1,10 @@
+@use '../base/variables' as *;
+.badge {
+    font-size: 14px;
+    font-weight: $font-weight-semibold;
+    line-height: $size-l;
+    letter-spacing: 0;
+    text-align: right;
+    color: $bright-blue;
+    padding: 8px 10px;
+  }

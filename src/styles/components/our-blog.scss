@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+.our-blog {
+    padding: 64px;
+    background-image: url('../images/banner.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+  &__title {
+    text-align: center;
+  }
+}
+ 

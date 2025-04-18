@@ -1,0 +1,31 @@
+@use '../base/variables' as *;
+.profile {
+    background-color: $secondary-color;
+  
+  /* section our team */
+  &__avatar {
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    object-fit: cover;
+    top: -7px;
+    left: -6px;
+  }
+
+  &__name {
+    font-size: $size-xl;
+    line-height: 32px;
+    color: $white;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &__position {
+    font-size: $size-m;
+    font-weight: $font-weight-regular;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    color: $soft-white;
+    text-align: center;
+  }
+}

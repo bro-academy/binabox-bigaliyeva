@@ -1,0 +1,26 @@
+@use '../base/variables' as *;
+.accordion {
+    background-color: $secondary-color;
+    padding: 24px 24px 32px;
+    margin-bottom: $base-size;
+
+  &__header {
+    font-family: $font-accent;
+    font-size: $size-xl;
+    font-weight: $font-weight-regular;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: $white;
+    padding-top: 0px;
+    padding-bottom: $size-xl;
+    border-bottom: 1px solid $dark-blue;
+  }
+
+ &__content {
+    font-size: $base-size;
+    font-weight: $font-weight-regular;
+    line-height: $size-xl;
+    letter-spacing: 0;
+    color: $white;
+  }
+}

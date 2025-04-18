@@ -1,0 +1,29 @@
+@use '../base/variables' as *;
+.product{
+    background-color: $secondary-color;
+    padding: $size-xl;
+    margin-right: $size-xl;
+  
+  &__price {
+    font-family: $font-accent;
+    font-size: $size-3xl;
+    font-weight: $font-weight-regular;
+    line-height: 48px;
+    color: $white;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+
+&__name {
+    font-family: $font-base;
+    font-size: $size-l;
+    font-weight: $font-weight-medium;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    color: $soft-white;
+    text-align: left;
+  }
+}
+  .product:last-of-type {
+    margin-right: 0;
+  }
