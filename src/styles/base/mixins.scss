@@ -1,0 +1,51 @@
+@use 'variables' as *;
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @mixin nav-link-style($light-blue, $blue, $gray) {
+    &:hover {
+      border-bottom: 4px solid $light-blue;
+      color: $light-blue;
+    }
+  
+    &:focus {
+      border-bottom: 4px solid $light-blue;
+      color: $white;
+    }
+  
+    &:active {
+      color: $blue;
+    }
+  
+    &:disabled {
+      color: $gray;
+    }
+  }
+  @mixin button-style(
+  $bg-color,
+  $text-color,
+  $border: none,
+  $font-size: 24px,
+  $font-weight: $font-weight-semibold,
+  $line-height: 28px,
+  $padding: 10px 24px
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: 0;
+  padding: $padding;
+  color: $text-color;
+  background-color: $bg-color;
+  border: $border;
+  cursor: pointer;
+}

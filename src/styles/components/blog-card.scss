@@ -1,0 +1,41 @@
+@use '../base/variables' as *;
+.blog-card {
+    background-color: $secondary-color;
+    padding: $size-xl;
+    margin-bottom: 32px;
+  
+ &__title {
+    font-family: $font-accent;
+    font-size: $size-3xl;
+    font-weight: $font-weight-regular;
+    line-height: 48px;
+    color: $white;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+&__author,
+&__date {
+    font-size: $size-s;
+    font-weight: $font-weight-semibold;
+    line-height: $size-l;
+    letter-spacing: 0;
+    color: $soft-white;
+  }
+  &__text {
+    font-size: $base-size;
+    font-weight: $font-weight-regular;
+    line-height: $size-xl;
+    letter-spacing: 0;
+    color: $soft-white;
+    text-align: left;
+  }
+
+
+  &:nth-of-type(odd) {
+    margin-right: 32px;
+  }
+
+  &:nth-of-type(even) {
+    margin-right: 0;
+  }
+}

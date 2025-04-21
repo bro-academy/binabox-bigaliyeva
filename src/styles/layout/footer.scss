@@ -1,0 +1,57 @@
+@use '../base/variables' as *;
+.footer{
+    padding: 64px;
+    background-color: $dark-purple;
+    padding-bottom: 32px;
+  
+  &__text {
+    font-size: $size-s;
+    font-weight: $font-weight-regular;
+    line-height: $size-l;
+    letter-spacing: 0;
+    color: $white;
+    text-align: left;
+  }
+
+  &__title {
+    font-family: $font-base;
+    font-size: $size-l;
+    font-weight: $font-weight-medium;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    color:$white;
+  }
+
+  /* footer navigation */
+  &-nav__list {
+    list-style: none;
+  }
+
+  &-nav__link {
+    font-size: $size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-block;
+  }
+
+  &-nav__link:hover {
+    border-bottom: 4px solid $light-blue;
+    color: $light-blue;
+  }
+
+  &-nav__link:focus {
+    border-bottom: 4px solid $light-blue;
+    border-radius: 5px;
+    padding: 4px;
+  }
+
+  &-nav__link:active {
+    color: $blue;
+  }
+
+  &-nav__link:disabled {
+    color: $gray;
+  }
+}

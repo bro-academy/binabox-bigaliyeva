@@ -1,0 +1,27 @@
+@use '../base/variables' as *;
+.about-us {
+    padding: 64px;
+    
+    &__title{
+      font-family: $font-accent;
+      font-size: $size-3xl;
+      line-height: 48px;
+      letter-spacing: -0,5px;
+      text-align: center;
+      color:$white;
+    }
+
+    &__text {
+      font-family: $font-base;
+      font-size: $size-l;
+      font-weight: $font-weight-medium;
+      line-height: $size-xxl;
+      letter-spacing: 0;
+      color: $soft-white;
+      text-align: center;
+    }
+  &__item {
+    background-color: $dark-purple;
+  }
+
+}

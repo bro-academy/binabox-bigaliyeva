@@ -6,15 +6,15 @@
   <p class="banner__text">
     {{ banner.text }}
   </p>
-  {% for stat in banner.stats %}
-  <span class="banner__stat banner__stat--number">{{ stat.value }}</span>
-  <span class="banner__stat banner__stat--text">{{ stat.label }}</span>
-  {% endfor %}
+{% for stat in banner.stats %}
+  <span class="banner__stat-number">{{ stat.value }}</span>
+  <span class="banner__stat-text">{{ stat.label }}</span>
+{% endfor %}
   <a href="#" class="button button--secondary button--large">Connect Wallet</a>
   <a href="#" class="button button--primary button--large">Whitelist now</a>
   <img
     src="/img/{{ banner.image }}-1x.webp"
-    class="banner logo"
+    class="banner__logo"
     alt="{{ banner.imageAlt }}"
   />
 </section>
