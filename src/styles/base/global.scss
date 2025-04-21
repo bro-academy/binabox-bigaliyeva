@@ -20,3 +20,13 @@
     font-family: $font-accent;
     font-weight: $font-weight-regular;
   }
+  h1 {
+    font-size: $size-4xl;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    color: $white;
+    margin: 0;
+  }
+  h1 span {
+    color: $bright-blue;
+  }

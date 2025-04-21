@@ -24,34 +24,4 @@
     background-color: $dark-purple;
   }
 
-  // &::before {
-  //   content: "0" counter(section);
-  //   position: absolute;
-  //   top: $base-size;
-  //   left: $base-size;
-  //   font-size: $size-big;
-  //   font-weight: $font-weight-bold;
-  //   color: transparent;npm 
-  //   -webkit-text-stroke: 2px $light-blue;
-  //   z-index: 0;
-  //   pointer-events: none;
-  // }
-
-  // &__text {
-  //   font-size: $size-l;
-  //   font-weight: $font-weight-medium;
-  //   line-height: $size-xxl;
-  //   letter-spacing: 0;
-  //   color: $soft-white;
-  //   text-align: center;
-  // }
-  // &__list {
-  //   list-style: none;
-  //   counter-reset: section;
-  //   padding: 0;
-  // }
-  // &__item {
-  //   position: relative;
-  //   counter-increment: section;
-  // }
 }

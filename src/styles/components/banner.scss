@@ -1,16 +1,4 @@
 @use '../base/variables' as *;
-h1 {
-    font-size: $size-4xl;
-    line-height: 62px;
-    letter-spacing: -0.5px;
-    color: $white;
-    margin: 0;
-  }
-
-  h1 span {
-    color: $bright-blue;
-  }
-
   .banner {
     padding: 64px 164px;
     background-color: $primary-color;
@@ -29,7 +17,7 @@ h1 {
   }
 
   /* Banner statistics */
-  &__stat--number {
+  &__stat-number {
     font-family: $font-accent;
     font-size: $size-4xl;
     font-weight: $font-weight-regular;
@@ -38,7 +26,7 @@ h1 {
     color: $white;
   }
 
-  &__stat--text {
+  &__stat-text {
     font-size: $base-size;
     font-weight: $font-weight-regular;
     line-height: $size-xl;

@@ -7,8 +7,8 @@
     $white,
     none
   );
-}
-.button--primary {
+
+&--primary {
   @include button-style(
     $primary-color,
     $white,
@@ -33,12 +33,10 @@
   }
 }
 
-.button--secondary {
+&--secondary {
   @include button-style(
     $light-blue,
-    $white
-  );
-
+    $white);
   &:hover {
     background-color: $light-blue;
   }
@@ -58,14 +56,15 @@
   }
 }
 
-.button--extra-large {
+&--extra-large {
   font-size: $size-s;
   font-weight: $font-weight-semibold;
   line-height: $size-xl;
   padding: 8px 20px;
 }
 
-.button--extra-large,
-.button--tag {
+&--extra-large,
+&--tag {
   background-color: $secondary-color;
+}
 }

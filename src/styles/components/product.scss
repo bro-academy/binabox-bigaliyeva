@@ -23,7 +23,8 @@
     color: $soft-white;
     text-align: left;
   }
-}
-  .product:last-of-type {
+
+  &:last-of-type {
     margin-right: 0;
   }
+}

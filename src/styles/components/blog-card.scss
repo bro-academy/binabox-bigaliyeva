@@ -29,12 +29,13 @@
     color: $soft-white;
     text-align: left;
   }
-}
 
-  .blog-card:nth-of-type(odd) {
+
+  &:nth-of-type(odd) {
     margin-right: 32px;
   }
 
-  .blog-card:nth-of-type(even) {
+  &:nth-of-type(even) {
     margin-right: 0;
   }
+}

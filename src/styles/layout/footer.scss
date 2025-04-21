@@ -1,55 +1,57 @@
+@use '../base/variables' as *;
 .footer{
     padding: 64px;
-    background-color: rgba(26, 25, 37, 1);
+    background-color: $dark-purple;
     padding-bottom: 32px;
-  }
-  footer__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+  
+  &__text {
+    font-size: $size-s;
+    font-weight: $font-weight-regular;
+    line-height: $size-l;
     letter-spacing: 0;
-    color: rgba(245, 248, 251, 1);
+    color: $white;
     text-align: left;
   }
 
-  .footer__title {
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
+  &__title {
+    font-family: $font-base;
+    font-size: $size-l;
+    font-weight: $font-weight-medium;
+    line-height: $size-xxl;
     letter-spacing: 0;
-    color: rgba(245, 248, 251, 1);
+    color:$white;
   }
 
   /* footer navigation */
-  .footer-nav__list {
+  &-nav__list {
     list-style: none;
   }
 
-  .footer-nav__link {
-    font-size: 12px;
-    font-weight: 600;
+  &-nav__link {
+    font-size: $size-xs;
+    font-weight: $font-weight-semibold;
     line-height: 16px;
     letter-spacing: 0;
     text-align: center;
     display: inline-block;
   }
 
-  .footer-nav__link:hover {
-    border-bottom: 4px solid rgba(56, 146, 243, 1);
-    color: rgba(56, 146, 243, 1);
+  &-nav__link:hover {
+    border-bottom: 4px solid $light-blue;
+    color: $light-blue;
   }
 
-  .footer-nav__link:focus {
-    border-bottom: 4px solid rgba(56, 146, 243, 1);
+  &-nav__link:focus {
+    border-bottom: 4px solid $light-blue;
     border-radius: 5px;
     padding: 4px;
   }
 
-  .footer-nav__link:active {
-    color: rgba(0, 84, 182, 1);
+  &-nav__link:active {
+    color: $blue;
   }
 
-  .footer-nav__link:disabled {
-    color: rgba(229, 236, 251, 0.36);
+  &-nav__link:disabled {
+    color: $gray;
   }
+}
