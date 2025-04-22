@@ -271,5 +271,28 @@
       "question": "Who are the team behind the project?",
       "answer": "Lorem ipsum dolor sit amet consectetur."
     }
+  ],
+  "hero": {
+    "title": "Contact Us",
+    "breadcrumbs": [{ "title": "Home", "url": "/" }, { "title": "Contact Us" }],
+     "image": "hero-banner",
+    "imageAlt": "banner"
+  },
+  "contacts": [
+    {
+      "title": "Location",
+      "text": "2163 Phillips Gap Rd",
+      "icon": "location"
+    },
+    {
+      "title": "Email",
+      "text": "info.avitex@gmail.com",
+      "icon": "mail"
+    },
+    {
+      "title": "Phone",
+      "text": "+1 666 8888",
+      "icon": "phone"
+    }
   ]
 }
