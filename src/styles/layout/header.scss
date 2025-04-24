@@ -1,7 +1,22 @@
 @use '../base/variables' as *;
+@use '../components/navigation';
+@use '../components/search-form';
 .header {
     padding: 32px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    &__logo {
+      flex-shrink: 0;
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }  
   }

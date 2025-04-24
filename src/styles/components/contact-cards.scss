@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+.contact-cards {
+    padding: 64px;
+    padding-bottom: 0px;
+    height:296px;
+  
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+   
+    }
+  
+    &__item {
+      padding: 40px 32px;
+      color: $white;
+      background-size: cover; 
+      background-position: center; 
+      text-align: center;
+      width: 300px;
+      height:232px;
+      border: 1px solid $border-light;
+    }
+
+    &__title {
+    font-size: $size-3xl;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    margin-top: $size-xl;
+  }
+
+  &__text {
+    font-size: $base-size;
+    font-weight: $font-weight-regular;
+    line-height: $size-xl;
+  }
+}

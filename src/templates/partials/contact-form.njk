@@ -1,0 +1,72 @@
+<section class="contact-form">
+  <h2 class="contact-form__title">Get in touch</h2>
+  <p class="contact-form__subtitle">
+    Browse through the most frequently asked questions
+  </p>
+
+  <form class="contact-form__form">
+    <div class="contact-form__toggle">
+      <label>
+        Use my profile information
+        <input type="checkbox" />
+      </label>
+    </div>
+
+    <div class="contact-form__group">
+      <label for="firstName" class="contact-form__label">Name</label>
+        <input type="text" id="firstName" name="firstName" class="contact-form__input" required />
+    </div>
+
+    <div class="contact-form__group">
+      <label for="lastName" class="contact-form__label">Last name </label>
+        <input type="text" id="lastName" name="lastName" class="contact-form__input" required />
+    </div>
+
+    <div class="contact-form__group">
+      <label for="dob" class="contact-form__label">Date of birth </label>
+        <input type="text" id="dob"  name="dob" placeholder="dd/mm/yyyy" class="contact-form__input"/>
+     
+    </div>
+
+    <div class="contact-form__group contact-form__group--inline">
+      <p class="contact-form__label">Gender</p>
+      <div class="contact-form__radio-group">
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+    </div>
+    </div>
+
+    <div class="contact-form__group">
+      <label for="email" class="contact-form__label">Email</label>
+      <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your email">
+    </div>
+
+    <div class="contact-form__group">
+      <label for="phone"  class="contact-form__label"> Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="contact-form__input" />
+    </div>
+
+    <div class="contact-form__group">
+      <label for="message" class="contact-form__label">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        class="contact-form__textarea"
+        rows="4"
+        required
+      ></textarea>
+    </div>
+    
+    <div class="contact-form__group contact-form__group--agree">
+      <label class="contact-form__agree">
+        <input type="checkbox" required />
+        By clicking on the ‘Send Message’ button I agree to all the
+        <a href="#">terms of the security policy</a>
+      </label>
+    </div>
+
+    <div class="contact-form__actions">
+      <button type="submit" class="button button--secondary">Send Message</button>
+    </div>
+  </form>
+</section>

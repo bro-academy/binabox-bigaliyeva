@@ -1,0 +1,16 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+{% set hero = pages.catalog.hero %}
+{% include "partials/hero.njk" %}
+  <section class="catalog-grid">
+   <div class="catalog-grid__container container">
+  <div class="catalog-grid__sidebar">
+        {% include "partials/catalog-filters.njk" %}
+      </div>
+        <div class="catalog-grid__main">
+        {% include "partials/catalog-main.njk" %}
+        {% include "partials/product-card.njk" %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

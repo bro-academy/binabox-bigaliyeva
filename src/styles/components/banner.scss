@@ -2,9 +2,9 @@
   .banner {
     padding: 64px 164px;
     background-color: $primary-color;
-    background-image: radial-gradient(ellipse, $bright-blue 0%,  $bright-blue-transparent 100%), url('../images/cube-banner.webp');
+    background-image: radial-gradient(ellipse, $bright-blue 0%,  $bright-blue-transparent 100%);
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center;
     background-size: contain;
   
   /* Hero banner text */

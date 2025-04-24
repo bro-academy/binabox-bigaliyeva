@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+.catalog-filter {
+  color:$white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 16px;
+  background-color: $secondary-color;
+  border-radius: 8px;
+
+  &__title{
+    font-size: 24px;
+    font-weight: 400;
+    color:white;
+  }
+
+&__form{
+    color:$white;
+    display:flex;
+    flex-direction: column;
+}
+// &__block{
+//     display: flex;
+//     flex-direction: column;
+//     gap:6px;
+//     background-color: grey;
+
+// }
+
+
+}

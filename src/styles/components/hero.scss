@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+.hero {
+    padding-top: 64px;
+    background-color: $primary-color;
+    background-image: url('../img/hero-banner-2x.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:376px;
+
+    &__title {
+        font-family: $font-accent;
+        text-align: center;
+}
+}

@@ -1,8 +1,9 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
-  {% include "partials/hero.njk" %} 
-   {% include "partials/contactcards.njk" %} 
-    {% include "partials/contactform.njk" %} 
+ {% set hero = pages.contact.hero %}
+{% include "partials/hero.njk" %}
+   {% include "partials/contact-cards.njk" %} 
+    {% include "partials/contact-form.njk" %} 
 {% endblock %}
 {% set title = "Test page" %}
 {{ title }}
