@@ -1,20 +1,36 @@
 <section class="banner">
-  <h1 class="banner__title">
-    WITH <span> {{ banner.highlight }}</span>
-    {{ banner.title }}
-  </h1>
-  <p class="banner__text">
-    {{ banner.text }}
-  </p>
-{% for stat in banner.stats %}
-  <span class="banner__stat-number">{{ stat.value }}</span>
-  <span class="banner__stat-text">{{ stat.label }}</span>
-{% endfor %}
-  <a href="#" class="button button--secondary button--large">Connect Wallet</a>
-  <a href="#" class="button button--primary button--large">Whitelist now</a>
-  <img
-    src="/img/{{ banner.image }}-1x.webp"
-    class="banner__logo"
-    alt="{{ banner.imageAlt }}"
-  />
+  <div class="banner__container container">
+    <div class="banner__content">
+      <h1 class="banner__title">
+        WITH <span> {{ banner.highlight }}</span>
+        {{ banner.title }}
+      </h1>
+      <p class="banner__text">
+        {{ banner.text }}
+      </p>
+      <div class="banner__stats">
+        {% for stat in banner.stats %}
+        <div class="banner__stat">
+          <span class="banner__stat-number">{{ stat.value }}</span>
+          <span class="banner__stat-text">{{ stat.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="banner__buttons">
+        <a href="#" class="button button--secondary button--large"
+          >Connect Wallet</a
+        >
+        <a href="#" class="button button--primary button--large"
+          >Whitelist now</a
+        >
+      </div>
+    </div>
+    <div class="banner__image">
+      <img
+        src="/img/{{ banner.image }}-1x.webp"
+        class="banner__logo"
+        alt="{{ banner.imageAlt }}"
+      />
+    </div>
+  </div>
 </section>

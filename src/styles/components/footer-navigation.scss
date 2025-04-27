@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+.footer-nav {
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    font-size: $size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 4px 8px;
+    display: inline-block;
+  }
+
+  &__link:hover {
+    border-bottom: 4px solid $light-blue;
+    color: $light-blue;
+  }
+
+  &__link:focus {
+    border-bottom: 4px solid $light-blue;
+    border-radius: 5px;
+    padding: 4px;
+  }
+
+  &__link:active {
+    color: $blue;
+  }
+
+  &__link:disabled {
+    color: $gray;
+  }
+}

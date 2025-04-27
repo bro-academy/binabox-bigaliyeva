@@ -1,37 +1,58 @@
 <section class="catalog">
-  <div class="catalog__slider">
-    <img src="/img/icons/folder.svg" class="icon-img" alt="icon catalog" />
-    <h2 class="catalog__title">{{ catalog.title }}</h2>
-    <a href="#" class="button button--primary button--small">{{
-      catalog.buttonSeeAll
-    }}</a>
-    <button type="button" class="button button--primary button--extra-small">
-      &lt;
-    </button>
-    <button type="button" class="button button--secondary button--extra-small">
-      &gt;
-    </button>
-  </div>
-  <div class="products-container">
-    {% for product in catalog.products %}
-    <article class="product">
-      <div class="product__image">
-        <a href="#">
-          <img
-            src="/img/{{ product.image }}-1x.webp"
-            width="252.8"
-            height="324"
-            alt="{{ product.name | lower }}"
-            srcset="/img/{{ product.image }}-1x.webp, /img/{{ product.image }}-2x.webp 2x"
-          />
-          <span class="badge {{ product.badgeClass }}">{{
-            product.badge
-          }}</span>
-          <p class="product__price">{{ product.price }}</p>
-          <h3 class="product__name">{{ product.name }}</h3>
-        </a>
+  <div clas="catalog__container">
+    <div class="catalog__slider">
+      <div class="catalog__block-title">
+        <img
+          src="/img/icons/folder.svg"
+          class="catalog__icon"
+          alt="icon catalog"
+        />
+        <h2 class="catalog__title">{{ catalog.title }}</h2>
       </div>
-    </article>
-    {% endfor %}
+
+      <div class="catalog__line"></div>
+
+      <div class="catalog__nav">
+        <a href="#" class="button button--primary button--small">{{
+          catalog.buttonSeeAll
+        }}</a>
+
+        <div class="catalog__divider"></div>
+        <button
+          type="button"
+          class="button button--primary button--extra-small"
+        >
+          &lt;
+        </button>
+        <button
+          type="button"
+          class="button button--secondary button--extra-small"
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+    <div class="catalog__products">
+      {% for product in catalog.products %}
+      <div class="product">
+        <div class="product__image">
+          <a href="#">
+            <img
+              src="/img/{{ product.image }}-1x.webp"
+              width="252.8"
+              height="324"
+              alt="{{ product.name | lower }}"
+              srcset="/img/{{ product.image }}-1x.webp, /img/{{ product.image }}-2x.webp 2x"
+            />
+            <span class="badge badge--{{ product.badgeType }}">{{
+              product.badge
+            }}</span>
+            <p class="product__price">{{ product.price }}</p>
+            <h3 class="product__name">{{ product.name }}</h3>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>

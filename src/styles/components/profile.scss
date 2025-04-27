@@ -1,7 +1,16 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 .profile {
-    background-color: $secondary-color;
-  
+  background-color: $secondary-color;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 280px;
+  max-width: 290px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
   /* section our team */
   &__avatar {
     width: 127px;
@@ -27,5 +36,12 @@
     letter-spacing: 0;
     color: $soft-white;
     text-align: center;
+  }
+
+  &__icon {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
   }
 }

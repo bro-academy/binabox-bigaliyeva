@@ -1,31 +1,39 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 .breadcrumb {
-    margin-top:24px;
-    font-size: $size-s;
-    color: $white;
-    text-align: center;
+  margin-top: 24px;
+  font-size: $size-s;
+  color: $white;
+  text-align: center;
 
-    &__item {
-        display:inline-flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 16px;
-
-
-  &__item::before {
-    content: "";
-    position:absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 24px;
-    background-color: $dark-gray;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
   }
+  &__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 16px;
 
-  &:first-child::before {
-    display: none; 
-  }
+    &:after {
+      content: "";
+      left: 0;
+      top: 50%;
+      width: 2px;
+      height: 24px;
+      background-color: $dark-gray;
     }
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      color: $light-gray;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
 }

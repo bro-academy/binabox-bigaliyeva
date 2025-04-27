@@ -1,8 +1,8 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 .catalog {
-    padding: 64px;
-  
-&__title {
+  padding: $spacing-4xl;
+
+  &__title {
     font-size: $size-xl;
     font-weight: $font-weight-regular;
     line-height: 32px;
@@ -19,5 +19,48 @@
     color: $white;
     border: $border-line solid $dark-gray;
     padding: 10px 24px;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-m;
+    padding: $spacing-m 0;
+  }
+
+  &__block-title {
+    display: flex;
+    align-items: center;
+    gap: $spacing-s;
+    flex-shrink: 0;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: $border-light;
+    opacity: 0.5;
+  }
+  &__divider {
+    width: 2px;
+    height: 24px;
+    background-color: $border-light;
+    opacity: 0.5;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: $spacing-m;
+    flex-shrink: 0;
+  }
+  &__products {
+    display: flex;
+    gap: 24px;
   }
 }

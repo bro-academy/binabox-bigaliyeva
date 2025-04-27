@@ -1,9 +1,27 @@
-@use '../base/variables' as *;
-.product{
-    background-color: $secondary-color;
-    padding: $size-xl;
-    margin-right: $size-xl;
-  
+@use "../base/variables" as *;
+.product {
+  background-color: $secondary-color;
+  padding: $spacing-l;
+  overflow: hidden;
+  width: 300px;
+  height: 480px;
+
+  &:hover {
+    box-shadow: 0 0 10px $light-blue;
+  }
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 324px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
   &__price {
     font-family: $font-accent;
     font-size: $size-3xl;
@@ -12,9 +30,10 @@
     color: $white;
     letter-spacing: -0.5px;
     text-align: left;
+    margin-top: $spacing-l;
   }
 
-&__name {
+  &__name {
     font-family: $font-base;
     font-size: $size-l;
     font-weight: $font-weight-medium;
@@ -22,9 +41,5 @@
     letter-spacing: 0;
     color: $soft-white;
     text-align: left;
-  }
-
-  &:last-of-type {
-    margin-right: 0;
   }
 }

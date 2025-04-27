@@ -1,4 +1,4 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
 .contact-form {
   padding: 64px 0;
@@ -24,66 +24,65 @@
     flex-direction: column;
     gap: 16px;
   }
-&__toggle {
+  &__toggle {
     font-size: $size-s;
     font-weight: $font-weight-regular;
     line-height: 20px;
-    color:$white;
+    color: $white;
     padding: 24px;
-    display:block;
+    display: block;
     background-color: $secondary-color;
     height: 72px;
     text-align: left;
-
-}
-&__group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
-  gap:4px;
-}
-
-&__label {
-  padding: 2px 0;
-  font-size: $size-s;
-  color: $white;
-  text-align: left;
-}
-
-&__input,
-&__textarea {
-  padding: 10px 14px;
-  background-color: transparent;
-  border: 1px solid $dark-gray;
-  border-radius: 6px;
-  color: $white;
-  font-size: $base-size;
-
-  &::placeholder {
-    color: $soft-white;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 4px;
   }
 
-  &:focus {
-    outline: none;
-    border-color: $light-blue;
+  &__label {
+    padding: 2px 0;
+    font-size: $size-s;
+    color: $white;
+    text-align: left;
   }
-}
-&__radio-group{
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap:4px;
-  padding: 2px 0;
-  color:$white;
-}
 
-&__agree{
-  font-size: $size-s;
-  font-weight: $font-weight-regular;
-  line-height: 20px;
-  color:$white;
-}
-a {
-  color: $light-blue;
-}
+  &__input,
+  &__textarea {
+    padding: 10px 14px;
+    background-color: transparent;
+    border: 1px solid $dark-gray;
+    border-radius: 6px;
+    color: $white;
+    font-size: $base-size;
+
+    &::placeholder {
+      color: $soft-white;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $light-blue;
+    }
+  }
+  &__radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 2px 0;
+    color: $white;
+  }
+
+  &__agree {
+    font-size: $size-s;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    color: $white;
+  }
+  a {
+    color: $light-blue;
+  }
 }
