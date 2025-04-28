@@ -1,0 +1,16 @@
+<form
+  class="search-form {{ classModifier | default('') }}"
+  action="{{ actionUrl }}"
+  method="get"
+>
+  <div class="search-form__field">
+    <input
+      type="search"
+      name="query"
+      class="search-form__input"
+      placeholder="{{ placeholder }}"
+      required
+    />
+    <button type="submit" class="search-form__button"></button>
+  </div>
+</form>

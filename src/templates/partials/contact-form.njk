@@ -4,7 +4,7 @@
     Browse through the most frequently asked questions
   </p>
 
-  <form class="contact-form__form">
+  <form class="contact-form__form" action="#" method="post">
     <div class="contact-form__toggle">
       <label>
         Use my profile information
@@ -24,26 +24,30 @@
 
     <div class="contact-form__group">
       <label for="dob" class="contact-form__label">Date of birth </label>
-        <input type="text" id="dob"  name="dob" placeholder="dd/mm/yyyy" class="contact-form__input"/>
+        <input type="text" id="dob"  name="dob" placeholder="dd/mm/yyyy" class="contact-form__input" 
+        pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}$" required/>
      
     </div>
 
     <div class="contact-form__group contact-form__group--inline">
       <p class="contact-form__label">Gender</p>
       <div class="contact-form__radio-group">
-      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="male" required /> Male</label>
       <label><input type="radio" name="gender" value="female" /> Female</label>
     </div>
     </div>
 
     <div class="contact-form__group">
       <label for="email" class="contact-form__label">Email</label>
-      <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your email">
+      <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your email" required />
     </div>
 
     <div class="contact-form__group">
       <label for="phone"  class="contact-form__label"> Phone Number</label>
-        <input type="tel" id="phone" name="phone" class="contact-form__input" />
+        <input type="tel" id="phone" name="phone" class="contact-form__input"  pattern="^\+?[0-9\s\-]{7,15}$" required   placeholder="+1 123 456 7890"
+  />
+  <small class="contact-form__hint">Format: +CountryCode PhoneNumber (e.g., +1 123 456 7890)</small>
+</div> />
     </div>
 
     <div class="contact-form__group">

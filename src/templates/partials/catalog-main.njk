@@ -20,7 +20,22 @@
         </select>
       </div>
     </div>
+
+     <form class="search-form search-form--catalog" action="#" method="get">
+      <div class="search-form__field">
+        <input
+          type="search"
+          name="query"
+          class="search-form__input"
+          placeholder="Search"
+          required
+        />
+        <button type="submit" class="search-form__button"></button>
+      </div>
+    </form>
   </div>
+
+
 
   <div class="catalog-main__products">
     {% include "partials/product-card.njk" %}

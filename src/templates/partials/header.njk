@@ -1,20 +1,32 @@
 <header class="header">
   <div class="header__container container">
-
     <div class="header__logo">
       <a href="#">
-        <img class="logo logo--primary" src="/img/logo-white-1x.webp" alt="Binabox logo">
-        </a></div>
-
-          {% include "partials/nav.njk" %}
-
-
-         <div class="header__actions">
-      <form class="search-form">
-        <button type="submit" class="search-button"></button>
-        <input type="text" class="search-input" placeholder="search" />
-      </form>
-      <a href="#" class="button button--primary button--medium">Discord</a>
-      <button type="button" class="button button--secondary button--medium">Connect</button>
+        <img
+          class="logo logo--primary"
+          src="/img/logo-white-1x.webp"
+          alt="Binabox logo"
+        />
+      </a>
+    </div>
+    
+    {% include "partials/nav.njk" %}
+    <form class="search-form search-form--header" action="#" method="get">
+      <div class="search-form__field">
+        <input
+          type="search"
+          name="query"
+          class="search-form__input"
+          placeholder="Search"
+          required
+        />
+        <button type="submit" class="search-form__button"></button>
       </div>
-    </header>
+    </form>
+
+    <a href="#" class="button button--primary button--medium">Discord</a>
+    <button type="button" class="button button--secondary button--medium">
+      Connect
+    </button>
+  </div>
+</header>
