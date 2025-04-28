@@ -1,6 +1,8 @@
 @use "../base/variables" as *;
 .product {
   background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
   padding: $spacing-l;
   overflow: hidden;
   width: 300px;
@@ -28,9 +30,9 @@
     font-weight: $font-weight-regular;
     line-height: 48px;
     color: $white;
+    margin-top: $spacing-l;
     letter-spacing: -0.5px;
     text-align: left;
-    margin-top: $spacing-l;
   }
 
   &__name {

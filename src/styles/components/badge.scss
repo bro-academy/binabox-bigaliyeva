@@ -7,15 +7,12 @@
   font-size: $font-size-xs;
   padding: 4px 8px;
 
-  &--new {
-    background-color: $light-blue;
+  &--white {
+    background-color: $white;
+    color: $bright-blue;
   }
 
-  &--soldout {
+  &--red {
     background-color: red;
-  }
-  &--nft {
-    color: $light-blue;
-    background-color: $white;
   }
 }

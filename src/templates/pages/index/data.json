@@ -49,35 +49,35 @@
         "name": "Name Product",
         "price": "199$",
         "badge": "new",
-        "badgeType": "new"
+        "badgeType": "white"
       },
       {
         "image": "cat",
         "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeType": "new"
+        "badgeType": "white"
       },
       {
         "image": "scissors",
         "name": "Name Product",
         "price": "199$",
         "badge": "Sold out",
-        "badgeType": "soldout"
+        "badgeType": "red"
       },
       {
         "image": "cyber-card",
         "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeType": "new"
+        "badgeType": "white"
       },
       {
         "image": "cyber-box",
         "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeType": "new"
+        "badgeType": "white"
       }
     ]
   },
