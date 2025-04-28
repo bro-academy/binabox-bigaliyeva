@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+.our-team {
+  padding: 64px;
+
+  &__title {
+    font-family: $font-accent;
+    font-size: $title-size-xl;
+    font-weight: $font-weight-regular;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__block {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+  }
+}

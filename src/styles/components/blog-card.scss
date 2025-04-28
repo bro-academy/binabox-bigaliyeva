@@ -1,10 +1,66 @@
-@use '../base/variables' as *;
-.blog-card {
+@use "../base/variables" as *;
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 32px;
+  padding: $size-xl;
+  margin-bottom: 32px;
+
+  &__card {
     background-color: $secondary-color;
-    padding: $size-xl;
-    margin-bottom: 32px;
-  
- &__title {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+    max-width: 736px;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  &__divider {
+    width: 2px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: $gray;
+    opacity: 0.5;
+  }
+
+  &__author,
+  &__date {
+    font-size: $size-s;
+    font-weight: $font-weight-semibold;
+    line-height: $size-l;
+    letter-spacing: 0;
+    color: $soft-white;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  &__title {
     font-family: $font-accent;
     font-size: $size-3xl;
     font-weight: $font-weight-regular;
@@ -12,14 +68,6 @@
     color: $white;
     letter-spacing: -0.5px;
     text-align: left;
-  }
-&__author,
-&__date {
-    font-size: $size-s;
-    font-weight: $font-weight-semibold;
-    line-height: $size-l;
-    letter-spacing: 0;
-    color: $soft-white;
   }
   &__text {
     font-size: $base-size;
@@ -29,13 +77,10 @@
     color: $soft-white;
     text-align: left;
   }
-
-
-  &:nth-of-type(odd) {
-    margin-right: 32px;
-  }
-
-  &:nth-of-type(even) {
-    margin-right: 0;
+  &__button {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
   }
 }

@@ -1,0 +1,11 @@
+<section class="contact-cards">
+  <div class="contact-cards__container container">
+    {% for item in contacts %}
+      <div class="contact-cards__item">
+        <img src="/img/icons/{{ item.icon }}.svg" class="contact-cards__icon" alt="{{ item.title }} icon" />
+        <h3 class="contact-cards__title">{{ item.title }}</h3>
+        <p class="contact-cards__text">{{ item.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

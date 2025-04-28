@@ -1,13 +1,31 @@
-@use '../base/variables' as *;
-  .banner {
-    padding: 64px 164px;
-    background-color: $primary-color;
-    background-image: radial-gradient(ellipse, $bright-blue 0%,  $bright-blue-transparent 100%), url('../images/cube-banner.webp');
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
-  
-  /* Hero banner text */
+@use "../base/variables" as *;
+.banner {
+  padding: 64px 0;
+  background-color: $primary-color;
+  background-image: radial-gradient(
+    ellipse,
+    $bright-blue 0%,
+    $bright-blue-transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  // container in Banner
+  &__container {
+    padding: 0 164px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__content {
+    max-width: 50%;
+  }
+  // Banner text
   &__text {
     font-size: $size-l;
     font-weight: $font-weight-medium;
@@ -16,7 +34,17 @@
     color: $white;
   }
 
-  /* Banner statistics */
+  // Banner statistics
+  &__stats {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0;
+  }
+  &__stat {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__stat-number {
     font-family: $font-accent;
     font-size: $size-4xl;
@@ -33,7 +61,18 @@
     letter-spacing: 0;
     color: $soft-white;
   }
-  &__logo{
-    display:inline-block;
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  // banner image
+  &__image {
+    max-width: 45%;
+  }
+  &__logo {
+    width: 100%;
+    height: auto;
   }
 }

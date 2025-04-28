@@ -1,0 +1,28 @@
+<section class="catalog-main">
+  <div class="catalog-main__header">
+    <h2 class="catalog-main__title">All item</h2>
+
+    <div class="catalog-main__controls">
+      <div class="catalog-main__tags">
+        <button class="catalog-main__tag catalog-main__tag--active">NFT</button>
+        <button class="catalog-main__tag">ICO</button>
+        <button class="catalog-main__tag">Token</button>
+        <button class="catalog-main__tag">DeFi</button>
+      </div>
+
+      <div class="catalog-main__sort">
+        <label for="sort">Sort by:</label>
+        <select id="sort" class="catalog-main__select">
+          <option>Popularity</option>
+          <option>Newest</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="catalog-main__products">
+    {% include "partials/product-card.njk" %}
+  </div>
+</section>

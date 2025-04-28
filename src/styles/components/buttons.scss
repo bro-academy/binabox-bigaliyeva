@@ -1,70 +1,60 @@
-@use '../base/mixins' as *;
-@use '../base/variables' as *;
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
 
 .button {
-  @include button-style(
-    $primary-color,
-    $white,
-    none
-  );
+  @include button-style($primary-color, $white, none);
 
-&--primary {
-  @include button-style(
-    $primary-color,
-    $white,
-    2px solid $dark-gray
-  );
+  &--primary {
+    @include button-style($primary-color, $white, 2px solid $dark-gray);
 
-  &:hover,
-  &:active {
-    border: 2px solid $dark-blue;
-    background-color: $dark-blue;
+    &:hover,
+    &:active {
+      border: 2px solid $dark-blue;
+      background-color: $dark-blue;
+    }
+
+    &:focus {
+      border: 4px solid $light-blue;
+      background-color: $dark-blue;
+    }
+
+    &:disabled {
+      border: 2px solid $gray;
+      background-color: $dark-gray;
+      color: $gray;
+    }
   }
 
-  &:focus {
-    border: 4px solid $light-blue;
-    background-color: $dark-blue;
+  &--secondary {
+    @include button-style($light-blue, $white);
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &:focus {
+      background-color: $primary-color;
+      border: 4px solid $light-blue;
+    }
+
+    &:active {
+      background-color: $blue;
+    }
+
+    &:disabled {
+      background-color: $dark-gray;
+      color: $gray;
+    }
   }
 
-  &:disabled {
-    border: 2px solid $gray;
-    background-color: $dark-gray;
-    color: $gray;
-  }
-}
-
-&--secondary {
-  @include button-style(
-    $light-blue,
-    $white);
-  &:hover {
-    background-color: $light-blue;
+  &--extra-large {
+    font-size: $size-s;
+    font-weight: $font-weight-semibold;
+    line-height: $size-xl;
+    padding: 8px 20px;
   }
 
-  &:focus {
-    background-color: $primary-color;
-    border: 4px solid $light-blue;
+  &--extra-large,
+  &--tag {
+    background-color: $secondary-color;
   }
-
-  &:active {
-    background-color: $blue;
-  }
-
-  &:disabled {
-    background-color: $dark-gray;
-    color: $gray;
-  }
-}
-
-&--extra-large {
-  font-size: $size-s;
-  font-weight: $font-weight-semibold;
-  line-height: $size-xl;
-  padding: 8px 20px;
-}
-
-&--extra-large,
-&--tag {
-  background-color: $secondary-color;
-}
 }

@@ -1,27 +1,47 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 .about-us {
-    padding: 64px;
-    
-    &__title{
-      font-family: $font-accent;
-      font-size: $size-3xl;
-      line-height: 48px;
-      letter-spacing: -0,5px;
-      text-align: center;
-      color:$white;
-    }
+  padding: 64px;
 
-    &__text {
-      font-family: $font-base;
-      font-size: $size-l;
-      font-weight: $font-weight-medium;
-      line-height: $size-xxl;
-      letter-spacing: 0;
-      color: $soft-white;
-      text-align: center;
-    }
-  &__item {
-    background-color: $dark-purple;
+  &__title {
+    font-family: $font-accent;
+    font-size: $title-size-xl;
+    line-height: 48px;
+    letter-spacing: -0, 5px;
+    text-align: center;
+    color: $white;
   }
 
+  &__text {
+    font-family: $font-base;
+    font-size: $size-l;
+    font-weight: $font-weight-medium;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    color: $soft-white;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__container {
+    margin-top: 40px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    max-width: 280px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
 }
