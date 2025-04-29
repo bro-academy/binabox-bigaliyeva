@@ -1,4 +1,5 @@
-{ "pages": {
+{
+"pages": {
   "catalog": {
     "hero": {
       "title": "Catalog",
@@ -29,7 +30,7 @@
 },
 
   "nav": [
-    { "text": "Home", "url": "/" },
+    { "text": "Home", "url": "index" },
     { "text": "Blog", "url": "blog" },
     { "text": "Catalog", "url": "catalog" },
     { "text": "Contact us", "url": "contact" }
@@ -323,12 +324,23 @@
   {
     "title": "Clothing",
     "type": "checkbox",
-    "options": ["Combatbot", "Ninja", "King", "Queen", "Robot"]
+    "options":   [
+      { "label": "Combatbot", "value": "combatbot", "id": "clothing-combatbot" },
+      { "label": "Ninja", "value": "ninja", "id": "clothing-ninja" },
+      { "label": "King", "value": "king", "id": "clothing-king" },
+      { "label": "Queen", "value": "queen", "id": "clothing-queen" },
+      { "label": "Robot", "value": "robot", "id": "clothing-robot" }
+    ]
   },
   {
     "title": "Eyes",
     "type": "radio",
-    "options": ["Yellow", "Green", "Mix", "Orange"]
+    "options": [
+    { "label": "Yellow", "value": "yellow", "id": "eyes-yellow" },
+    { "label": "Green", "value": "green", "id": "eyes-green" },
+    { "label": "Mix", "value": "mix", "id": "eyes-mix" },
+    { "label": "Orange", "value": "orange", "id": "eyes-orange" }
+  ]
   },
   {
     "title": "Face",
@@ -348,7 +360,12 @@
   {
     "title": "Special",
     "type": "checkbox",
-    "options": ["Yellow", "Green", "Mix", "Orange"]
+    "options": [
+      { "label": "Yellow", "value": "yellow", "id": "special-yellow" },
+      { "label": "Green", "value": "green", "id": "special-green" },
+      { "label": "Mix", "value": "mix", "id": "special-mix" },
+      { "label": "Orange", "value": "orange", "id": "special-orange" }
+    ]
   }
 ],
 "product": [

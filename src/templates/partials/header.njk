@@ -1,4 +1,6 @@
 <header class="header">
+
+<!--logo-->
   <div class="header__container container">
     <div class="header__logo">
       <a href="#">
@@ -10,9 +12,13 @@
       </a>
     </div>
     
+    <!--navigation-->
     {% include "partials/nav.njk" %}
+
+    <!--search-->
     <form class="search-form search-form--header" action="#" method="get">
       <div class="search-form__field">
+        <label for="headerSearch" class="visually-hidden"></label>
         <input
           type="search"
           name="query"
@@ -20,10 +26,11 @@
           placeholder="Search"
           required
         />
-        <button type="submit" class="search-form__button"></button>
+         <button type="submit" class="search-form__button"></button>
       </div>
-    </form>
+         </form>
 
+        <!--buttons-->
     <a href="#" class="button button--primary button--medium">Discord</a>
     <button type="button" class="button button--secondary button--medium">
       Connect

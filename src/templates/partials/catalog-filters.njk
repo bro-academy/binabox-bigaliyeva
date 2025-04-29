@@ -1,3 +1,4 @@
+<!----filter for catalog page--->
 <aside class="catalog-filter">
   <form class="catalog-filter__form" action="#" method="get">
     {% for filter in filters %}
@@ -8,11 +9,11 @@
       <ul class="catalog-filter__list">
         {% for option in filter.options %}
         <li class="catalog-filter__item">
-          <label class="catalog-filter__label">
-            <input type="{{ filter.type }}" name="{{ filter.title | lower }}"
-            value="{{ option | lower }}" {% if filter.type == 'radio' and
+        <input type="{{ filter.type }}" id="{{ option.id }}" name="{{ filter.title | lower }}" value="{{ option.value}}"
+            {% if filter.type == 'radio' and
             loop.first %} required {% endif %} />
-            {{ option }}
+              <label class="catalog-filter__label" for="{{ option.id}}">
+            {{ option.label }}
           </label>
         </li>
         {% endfor %}
