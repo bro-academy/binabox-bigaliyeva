@@ -1,8 +1,10 @@
-<section class="catalog-main">
+ <!---main form for catalog page----->
+  <section class="catalog-main">
   <div class="catalog-main__header">
     <h2 class="catalog-main__title">All item</h2>
 
     <div class="catalog-main__controls">
+       <!--Tags-->
       <div class="catalog-main__tags">
         <button class="catalog-main__tag catalog-main__tag--active">NFT</button>
         <button class="catalog-main__tag">ICO</button>
@@ -10,18 +12,36 @@
         <button class="catalog-main__tag">DeFi</button>
       </div>
 
+       <!--sort-->
       <div class="catalog-main__sort">
-        <label for="sort">Sort by:</label>
-        <select id="sort" class="catalog-main__select">
-          <option>Popularity</option>
-          <option>Newest</option>
-          <option>Price: Low to High</option>
-          <option>Price: High to Low</option>
+        <label for="sort" class="catalog-main__label">Sort by:</label>
+        <select id="sort" class="catalog-main__select" name="sort">
+          <option value="popularity">Popularity</option>
+          <option value="newest">Newest</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price=high">Price: High to Low</option>
         </select>
       </div>
     </div>
+
+  <!--search-->
+     <form class="search-form search-form--catalog" action="#" method="get">
+      <div class="search-form__field">
+      <label for="catalogSearch" class="visually-hidden"></label>
+        <input
+          type="search"
+          name="query"
+          id="query-search"
+          class="search-form__input"
+          placeholder="Search"
+          required
+        />
+        <button type="submit" class="search-form__button"></button>
+      </div>
+    </form>
   </div>
 
+  <!-- cards -->
   <div class="catalog-main__products">
     {% include "partials/product-card.njk" %}
   </div>
