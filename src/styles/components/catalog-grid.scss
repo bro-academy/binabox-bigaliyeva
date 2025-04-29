@@ -1,10 +1,9 @@
 .catalog-grid {
-    padding: 48px 0;
-  
-    &__container {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 40px;
+  padding: 48px 0;
 
-    }
+  &__container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+  }
 }

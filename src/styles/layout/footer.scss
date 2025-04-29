@@ -1,8 +1,22 @@
 @use '../base/variables' as *;
+@use '../components/footer-navigation';
 .footer{
     padding: 64px;
     background-color: $dark-purple;
     padding-bottom: 32px;
+
+   &__block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(191, 197, 238, 0.12);
+   }
+
+   &__right {
+    margin-bottom: 32px;
+    display:flex;
+    justify-content: space-between;
+    gap: 64px;
+   }
   
   &__text {
     font-size: $size-s;
@@ -20,38 +34,25 @@
     line-height: $size-xxl;
     letter-spacing: 0;
     color:$white;
+    padding-left: 8px;
+    margin-bottom: 12px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
   }
 
-  /* footer navigation */
-  &-nav__list {
-    list-style: none;
+  &__copyright{
+    font-family:$font-base;
+    font-size: $size-s;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    text-align: left;
+    color:$white;
   }
-
-  &-nav__link {
-    font-size: $size-xs;
-    font-weight: $font-weight-semibold;
-    line-height: 16px;
-    letter-spacing: 0;
-    text-align: center;
-    display: inline-block;
-  }
-
-  &-nav__link:hover {
-    border-bottom: 4px solid $light-blue;
-    color: $light-blue;
-  }
-
-  &-nav__link:focus {
-    border-bottom: 4px solid $light-blue;
-    border-radius: 5px;
-    padding: 4px;
-  }
-
-  &-nav__link:active {
-    color: $blue;
-  }
-
-  &-nav__link:disabled {
-    color: $gray;
+  &__socials{
+    display: flex;
+    gap: 8px;
   }
 }

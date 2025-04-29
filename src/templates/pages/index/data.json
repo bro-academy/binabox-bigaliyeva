@@ -1,36 +1,27 @@
-{ 
-  "site": {
-    "title": "Binabox"
-  },
-"pages": {
-  "catalog": {
-    "hero": {
-      "title": "Catalog",
-      "breadcrumbs": [
-        { "title": "Home", "url": "/" },
-        { "title": "Catalog" }
-      ]
+{
+  "pages": {
+    "catalog": {
+      "hero": {
+        "title": "Catalog",
+        "breadcrumbs": [{ "title": "Home", "url": "/" }, { "title": "Catalog" }]
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Contact Us",
+        "breadcrumbs": [
+          { "title": "Home", "url": "/" },
+          { "title": "Contact Us" }
+        ]
+      }
+    },
+    "blog": {
+      "hero": {
+        "title": "Our Blog",
+        "breadcrumbs": [{ "title": "Home", "url": "/" }, { "title": "Blog" }]
+      }
     }
   },
-  "contact": {
-    "hero": {
-      "title": "Contact Us",
-      "breadcrumbs": [
-        { "title": "Home", "url": "/" },
-        { "title": "Contact Us" }
-      ]
-    }
-  },
-  "blog": {
-    "hero": {
-      "title": "Our Blog",
-      "breadcrumbs": [
-        { "title": "Home", "url": "/" },
-        { "title": "Blog" }
-      ]
-    }
-  }
-},
 
   "nav": [
     { "text": "Home", "url": "index" },
@@ -55,38 +46,38 @@
     "products": [
       {
         "image": "skeleton",
-        "name": "Skeleton",
+        "name": "Name Product",
         "price": "199$",
         "badge": "new",
-        "badgeClass": "badge--new"
+        "badgeType": "white"
       },
       {
         "image": "cat",
-        "name": "Cat",
+        "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeClass": "badge--new"
+        "badgeType": "white"
       },
       {
         "image": "scissors",
-        "name": "Scissors",
+        "name": "Name Product",
         "price": "199$",
         "badge": "Sold out",
-        "badgeClass": "badge--sold-out"
+        "badgeType": "red"
       },
       {
         "image": "cyber-card",
-        "name": "Cyber Card",
+        "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeClass": "badge--new"
+        "badgeType": "white"
       },
       {
         "image": "cyber-box",
-        "name": "Cyber Box",
+        "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeClass": "badge--new"
+        "badgeType": "white"
       }
     ]
   },
@@ -322,7 +313,7 @@
       "text": "+1 666 8888",
       "icon": "phone"
     }
-  ], 
+  ],
   "filters": [
   {
     "title": "Clothing",

@@ -59,7 +59,11 @@
     font-size: $base-size;
 
     &::placeholder {
+<<<<<<< HEAD
       color: $light-gray;
+=======
+      color: $soft-white;
+>>>>>>> main
     }
 
     &:focus {

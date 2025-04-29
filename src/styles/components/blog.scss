@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+.blog {
+  padding: 64px;
+
+  &__title {
+    font-family: $font-accent;
+    font-weight: $font-weight-regular;
+    font-size: $title-size-xl;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: $white;
+    text-align: center;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
