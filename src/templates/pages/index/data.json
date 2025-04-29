@@ -1,4 +1,7 @@
-{
+{ 
+  "site": {
+    "title": "Binabox"
+  },
 "pages": {
   "catalog": {
     "hero": {
