@@ -1,3 +1,4 @@
+<!---------------section catalog---------------------------------------->
 <section class="catalog">
   <div clas="catalog__container">
     <div class="catalog__slider">
@@ -32,7 +33,9 @@
         </button>
       </div>
     </div>
+     <!-----------------------------catalog cards container------------------------->
     <div class="catalog__products">
+      <!-----------------------------catalog cards------------------------->
       {% for product in catalog.products %}
       <div class="product">
         <div class="product__image">
@@ -47,8 +50,10 @@
             <span class="badge badge--{{ product.badgeType }}">{{
               product.badge
             }}</span>
+            <div class="roduct__info>"
             <p class="product__price">{{ product.price }}</p>
             <h3 class="product__name">{{ product.name }}</h3>
+          </div>
           </a>
         </div>
       </div>
