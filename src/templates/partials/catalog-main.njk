@@ -1,5 +1,4 @@
- <!---main form for catalog page----->
-  <section class="catalog-main">
+<section class="catalog-main">
   <div class="catalog-main__header">
     <h2 class="catalog-main__title">All item</h2>
       <div class="catalog-main__sort">
@@ -11,6 +10,7 @@
           <option value="price=high">Price: High to Low</option>
         </select>
       </div>
+       <div class="search-form__field">
      <form class="search-form search-form--catalog" action="#" method="get">
       <label for="catalogSearch" class="visually-hidden"></label>
         <input
@@ -19,15 +19,22 @@
           id="query-search"
           class="search-form__input"
           placeholder="Search"
-          required
-        />
+          required/>
         <button type="submit" class="search-form__button"></button>
-      </div>
     </form>
-  </div>
-
-  <!-- cards -->
+    </div>
+    </div>
+    <div class="catalog-main__controls">
+      <div class="catalog-main__tags">
+        <button class="catalog-main__tag catalog-main__tag--active">NFT</button>
+        <button class="catalog-main__tag">ICO</button>
+        <button class="catalog-main__tag">Crypto</button>
+      </div>
+      </div>
   <div class="catalog-main__products">
+  {% for product in catalog.products %}
+    {% set product = product %}
     {% include "partials/product-card.njk" %}
-  </div>
+  {% endfor %}
+</div>
 </section>

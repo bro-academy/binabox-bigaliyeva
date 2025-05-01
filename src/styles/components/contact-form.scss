@@ -40,6 +40,18 @@
     flex-direction: column;
     margin-bottom: 24px;
     gap: 4px;
+
+    &--agree {
+      font-size: $size-s;
+      font-weight: $font-weight-regular;
+      line-height: 20px;
+      color: $white;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__label {
@@ -76,12 +88,6 @@
     color: $white;
   }
 
-  &__agree {
-    font-size: $size-s;
-    font-weight: $font-weight-regular;
-    line-height: 20px;
-    color: $white;
-  }
   a {
     color: $light-blue;
   }

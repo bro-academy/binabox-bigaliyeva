@@ -3,7 +3,7 @@
 
   <div class="blog-container">
     {% for article in blog.articles %}
-    <article class="blog-container__card">
+    <article  class="blog-container__card{% if article.isBig %} blog-container__card--big{% endif %}" >
       <div class="blog-container__image">
         <img
           src="/img/{{ article.image }}-1x.webp"
@@ -42,7 +42,7 @@
     </article>
     {% endfor %}
   </div>
-     <!----------------------------- section blog button------------------------->
+  
   <div class="blog__button">
     <a href="#" class="button button--primary button--medium">{{
       blog.readMoreBtn

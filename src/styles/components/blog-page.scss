@@ -1,0 +1,18 @@
+@use "../base/variables" as *;
+.blog-page {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  grid-template-areas: "sidebar posts";
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__posts {
+    display: grid;
+  }
+}

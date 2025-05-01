@@ -2,7 +2,7 @@
   "pages": {
     "catalog": {
       "hero": {
-        "title": "Catalog",
+        "title": "Explore catalog",
         "breadcrumbs": [{ "title": "Home", "url": "/" }, { "title": "Catalog" }]
       }
     },
@@ -40,23 +40,26 @@
     "image": "cube-banner",
     "imageAlt": "banner logo"
   },
+    "homepage": {
   "catalog": {
     "title": "Catalog",
     "buttonSeeAll": "See all",
-    "products": [
+    "featuredProducts": [
       {
         "image": "skeleton",
         "name": "Name Product",
         "price": "199$",
         "badge": "new",
-        "badgeType": "white"
+        "badgeType": "white",
+        "showButton": false
       },
       {
         "image": "cat",
         "name": "Name Product",
         "price": "199$",
         "badge": "New",
-        "badgeType": "white"
+        "badgeType": "white",
+        "showButton": true
       },
       {
         "image": "scissors",
@@ -80,7 +83,7 @@
         "badgeType": "white"
       }
     ]
-  },
+  }},
   "blog": {
     "title": "Our blog",
     "readMoreBtn": "Read more",
@@ -92,28 +95,11 @@
         "date": "2022-06-20",
         "dateText": "20 Jun 2022",
         "title": "Sonic live",
-        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "isBig": true
       },
       {
-        "image": "gorilla",
-        "badge": "NFT",
-        "author": "Tony Nguyen",
-        "date": "2022-06-20",
-        "dateText": "20 Jun 2022",
-        "title": "Sonic live",
-        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
-      },
-      {
-        "image": "duck",
-        "badge": "NFT",
-        "author": "Tony Nguyen",
-        "date": "2022-06-20",
-        "dateText": "20 Jun 2022",
-        "title": "Sonic live",
-        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
-      },
-      {
-        "image": "skeleton-crop",
+        "image": "skeleton-crop",  
         "badge": "NFT",
         "author": "Tony Nguyen",
         "date": "2022-06-20",
@@ -131,7 +117,26 @@
         "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
       },
       {
-        "image": "cyber-box",
+        "image": "gorilla",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..."
+      },
+      {
+        "image":"cyber-box",
+        "badge": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateText": "20 Jun 2022",
+        "title": "Sonic live",
+        "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "isBig": true
+      },
+      {
+        "image":  "duck",
         "badge": "NFT",
         "author": "Tony Nguyen",
         "date": "2022-06-20",
@@ -362,26 +367,153 @@
     ]
   }
 ],
-"product": [
-  {
-    "image": "aqua-mindset",
-    "title": "Crypto King",
-    "category": "NFT",
-    "price": "$99"
+"catalog":{
+  "products":[
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    },
+    {
+      "image": "aqua-mindset",
+      "name": "Name Product",
+      "price": "199$",
+      "badge": "new",
+      "badgeType": "white",
+      "showButton": true
+    }
+  ]
+},
+"blogpage":{
+  "categories":[
+      { "name": "Our blog", "count": 12, "url": "#" },
+      { "name": "Metaverse", "count": 24, "url": "#" },
+      { "name": "Gaming", "count": 24, "url": "#" },
+      { "name": "Art", "count": 24, "url": "#" },
+      { "name": "Robot", "count": 24, "url": "#" },
+      { "name": "Lauchpad", "count": 24, "url": "#" },
+      { "name": "Crypto", "count": 430, "url": "#" }
+    ],
+    "tags": [
+      { "name": "NFT", "url": "#" },
+      { "name": "ICO", "url": "#" },
+      { "name": "Robot", "url": "#" },
+      { "name": "Lauchpad", "url": "#" },
+      { "name": "Metaverse", "url": "#" },
+      { "name": "Crypto", "url": "#" }
+    ],
+    "posts":[
+      {"images": [
+        {
+          "src":"dragon", 
+          "caption": "Photo caption", 
+          "alt":"dragon"
+        }
+      ],
+      "title":"The Basilisks NFT",
+       "category":"Gaming",
+    "author":"Tony Nguyen", 
+    "date": "2022-06-20",
+    "dateText": "20 Jun 2022",
+    "text":"The Basilisks that players collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO",
+    "list": [
+      "The Basilisks that players collect are represented with NFTs on Ethereum's blockchain with real-world value.",
+      "Players use the Basilisks they have gathered to battle other players to win ether (ETH)."
+    ],
+    "orderedList": [
+      "List name 1",
+      "List name 2",
+      "List name 3",
+      "List name 4"
+    ]
   },
-  {
-    "image": "aqua-mindset",
-    "title": "Meta Queen",
-    "category": "DeFi",
-    "price": "$129"
-  },
-  {
-    "image": "aqua-mindset",
-    "title": "Token Warrior",
-    "category": "ICO",
-    "price": "$79"
+    {
+      "type": "quote",
+      "text": "“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”",
+      "rating": "8.5/10",
+      "source": "Markout Corporation"
+    }, 
+    {  
+      "images": [
+        {
+          "src": "dragon-gaze",
+          "caption": "Dragon Gaze Caption",
+          "alt": "dragon gaze"
+        },
+        {
+          "src": "encounter-with-dragon",
+          "caption": "Encounter Caption",
+          "alt": "encounter with dragon"
+        }
+      ], 
+    "title":"NFTs are digital assets that represent real-world objects",
+  "text":"Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started."
+}
+    ],
+    "bottomTags": ["NFT", "ICO", "Crypto"],
+    "socials": [
+      { "icon": "twitter/bina", "alt": "twitter logo", "url": "#" },
+      { "icon": "fc/bina", "alt": "fc logo", "url": "#" },
+      { "icon": "ins/bina", "alt": "instagram logo", "url": "#" }
+    ]
   }
-]
-
-
 }
