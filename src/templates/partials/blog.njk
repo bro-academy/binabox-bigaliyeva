@@ -3,7 +3,7 @@
 
   <div class="blog-container">
     {% for article in blog.articles %}
-    <article class="blog-container__card">
+    <article  class="blog-container__card{% if article.isBig %} blog-container__card--big{% endif %}" >
       <div class="blog-container__image">
         <img
           src="/img/{{ article.image }}-1x.webp"
@@ -14,7 +14,6 @@
         />
         <span class="badge badge--white">{{ article.badge }}</span>
       </div>
-
       <div class="blog-container__meta">
         <img src="/img/icons/user.svg" class="icon-img" alt="icon human" />
         <p class="blog-container__author">{{ article.author }}</p>
@@ -34,7 +33,6 @@
       <div class="blog-container__article">
         <h3 class="blog-container__title">{{ article.title }}</h3>
         <p class="blog-container__text">{{ article.text }}</p>
-
         <div class="blog-container__button">
           <a href="#" class="button button--primary button--extra-large">{{
             blog.readMoreBtn
@@ -44,7 +42,7 @@
     </article>
     {% endfor %}
   </div>
-
+  
   <div class="blog__button">
     <a href="#" class="button button--primary button--medium">{{
       blog.readMoreBtn

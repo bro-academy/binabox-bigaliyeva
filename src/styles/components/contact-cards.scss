@@ -5,9 +5,9 @@
   height: 296px;
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
     gap: 16px;
+    justify-content: center;
   }
 
   &__item {

@@ -1,27 +1,33 @@
 @use "../base/variables" as *;
-.product {
+/*product cards in catalog*/
+.product-card {
   background-color: $secondary-color;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding: $spacing-l;
-  overflow: hidden;
-  width: 300px;
-  height: 480px;
+  overflow: visible;
+  width: 100%;
+  min-height: 350px;
 
   &:hover {
     box-shadow: 0 0 10px $light-blue;
   }
-  &__image {
-    position: relative;
-    width: 100%;
-    height: 324px;
-  }
 
-  img {
+  &__image-wrapper {
+    position: relative;
+    display: block;
+  }
+  &__image {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
+    aspect-ratio: 3 / 4;
+  }
+
+  &__info {
+    margin-top: 1rem;
   }
 
   &__price {

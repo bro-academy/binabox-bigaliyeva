@@ -1,0 +1,93 @@
+
+<section class="blog-page__posts">
+{% for post in blogpage.posts %}
+  <article class="post">
+  <div class="post__images">
+    {% for image in post.images %}
+    <figure class="post__figure">
+      <img src="/img/{{ image.image }}.webp" alt="{{ image.alt }}" class="post__image"
+        srcset="/img/{{ image.src }}-1x.webp 1x, /img/{{ image.src }}-2x.webp 2x" />
+      <figcaption class="post__caption">{{ image.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+    </div>
+
+    <h2 class="post__title">{{ post.title }}</h2>
+  
+    {% if post.category %}
+    <a href="#" class="post__link">{{ post.category }}</a>
+    {% endif %}
+ <div class="post__info">
+    {% if post.author %}
+    <img src="/img/icons/user.svg" class="icon-img" alt="icon human" />
+    <p class="post__author">{{ post.author }}</p>
+    {% endif %}
+ <div class="post__devider"></div>
+    {% if post.dateText %}
+    <img src="/img/icons/calendar.svg" class="icon-img" alt="icon calendar" />
+    <time datetime="{{ post.date }}" class="post__date">{{ post.dateText }}</time>
+    {% endif %}
+</div>
+  <div class="post__article">
+    {% if post.text %}
+    <p class="post__text">{{ post.text | safe }}</p>
+    {% endif %}
+
+    {% if post.list %}
+    <ul class="post__list">
+      {% for item in post.list %}
+      <li class="post__item">{{ item | safe }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if post.orderedList %}
+    <ol class="post__order-list">
+      {% for item in post.orderedList %}
+      <li class="post__item">{{ item }}</li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  {% endfor %}
+</div>
+  {% for post in blogpage.posts %}
+  {% if post.type == "quote" %}
+  <blockquote class="quote">
+    <p>{{ post.text }}</p>
+    <img src="/img/icon-star.svg" class="icon-img" alt="rating icon" />
+    <span>{{ post.rating }}</span>
+    <cite>{{ post.source }}</cite>
+  </blockquote>
+  {% else %}
+  <article class="post">
+  </article>
+  {% endif %}
+{% endfor %}
+</article>
+</section>
+
+<div class="blog-page__links">
+  <article class="tag-links">
+    <h2 class="tag-links__title">Tags:</h2>
+    <ul class="tag-links__list">
+      {% for tag in blogpage.bottomTags %}
+      <li class="tag-links__item">
+        <a href="#" class="button button--primary button--tag">{{ tag }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <article class="share-links">
+    <h2 class="share-links__title">Share:</h2>
+    <ul class="share-links__list">
+      {% for social in blogpage.socials %}
+      <li class="share-links__item">
+        <a href="{{ social.url }}" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="/img/{{ social.icon }}.jpg" class="icon-img" alt="{{ social.alt }}" />
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+  </div>

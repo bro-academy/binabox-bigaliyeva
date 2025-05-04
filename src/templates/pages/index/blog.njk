@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}
+{% set page = pages.catalog %}
+{% block content %}
+{% set hero = pages.blog.hero %}
+{% include "partials/hero.njk" %}
+<div class="blog-page">
+{% include "partials/blog-category.njk" %}
+{% include "partials/blog-post.njk" %}
+</div>
+{% endblock %}
+{% set title = "Test page" %}
+{{ title }}

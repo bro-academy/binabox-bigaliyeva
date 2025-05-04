@@ -1,0 +1,21 @@
+<aside class="blog-page__sidebar">
+     <section class="category">
+      <h2 class="category__title">Categories</h2>
+      <ul class="category__list">
+        {% for item in blogpage.categories %}
+        <li class="category__item">
+          <a href="{{ item.url }}"  class="category__link">{{ item.name }} ({{ item.count }})</a>
+        </li>
+        {% endfor %}
+      </ul>
+   </section>
+
+     <section class="tags">
+      <h2 class="tags__title">Tag</h2>
+      <div class="tags__list">
+      {% for tag in blogpage.tags %}
+        <a href="{{ tag.url }}" class="tags__link">{{ tag.name }}</a>
+      {% endfor %}
+      </div>
+    </section>
+  </aside>

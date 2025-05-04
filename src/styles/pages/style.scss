@@ -12,7 +12,7 @@
 @use "../components/info-card";
 @use "../components/blog";
 @use "../components/our-blog";
-@use "../components/product";
+@use "../components/product-card";
 @use "../components/our-team";
 @use "../components/profile";
 @use "../components/hero";
@@ -22,6 +22,11 @@
 @use "../components/catalog-grid";
 @use "../components/catalog-filters";
 @use "../components/catalog-main";
+@use "../components/blog-page";
+@use "../components/blog-categories";
+@use "../components/tag-links";
+@use "../components/tags";
+@use "../components/post";
 @use "../components/faqs";
 @use "../layout/header";
 @use "../layout/footer";

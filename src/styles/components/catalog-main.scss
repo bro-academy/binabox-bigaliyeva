@@ -1,4 +1,74 @@
-.catalog-main{
-    color:white;
-    
+@use "../base/variables" as *;
+.catalog-main {
+  color: white;
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    width: 100%;
+  }
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__label {
+    font-weight: 500;
+    color: $white;
+  }
+
+  &__select {
+    appearance: none;
+    background-color: $secondary-color;
+    border: 1px solid $bright-blue;
+    border-radius: 4px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    font-size: 1rem;
+    color: $white;
+    cursor: pointer;
+    position: relative;
+    background-image: url("/img/icons/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    outline: none;
+
+    &:focus {
+      border-color: $bright-blue;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 1rem;
+    background-color: $secondary-color;
+    padding: 1rem;
+  }
+
+  &__tag {
+    font-style: $font-base;
+    font-size: $font-size-m;
+    font-weight: $font-weight-semibold;
+    color: $white;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    border: 2px solid $dark-gray;
+    padding: 6px 12px;
+    background-color: $secondary-color;
+  }
+
+  &__products {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat((3, 1fr));
+    gap: 2rem;
+  }
 }

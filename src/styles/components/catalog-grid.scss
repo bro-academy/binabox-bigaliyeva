@@ -1,9 +1,21 @@
+@use "../base/variables" as *;
 .catalog-grid {
-  padding: 48px 0;
+  padding: 48px;
 
   &__container {
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 40px;
+    grid-template-areas: "sidebar main";
+  }
+  &__sidebar {
+    grid-area: sidebar;
+    display: grid;
+    gap: 20px;
+  }
+  &__main {
+    grid-area: main;
+    display: grid;
+    gap: 20px;
   }
 }
