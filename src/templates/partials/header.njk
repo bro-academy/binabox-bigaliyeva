@@ -1,40 +1,68 @@
 <header class="header">
-
-<!--logo-->
-  <div class="header__container container">
-    <div class="header__logo">
-      <a href="#">
-        <img
-          class="logo logo--primary"
-          src="/img/icons/logo-white.svg"
-          alt="Binabox logo"
-        />
-      </a>
-    </div>
+  <div class="header__top">
+    <nav class="menu">
     
-    <!--navigation-->
-    {% include "partials/nav.njk" %}
+      <input
+        type="checkbox"
+        id="menu"
+        class="menu__input visibility-hidden"
+      />
 
-    <!--search-->
-    <form class="search-form search-form--header" action="#" method="get">
-      <div class="search-form__field">
-        <label for="headerSearch" class="visually-hidden"></label>
-        <input
-          type="search"
-          name="query"
-          id="query"
-          class="search-form__input"
-          placeholder="Search"
-          required
-        />
-         <button type="submit" class="search-form__button"></button>
+      <label class="menu__opener" for="menu">
+        <span></span>
+      </label>
+
+      <div class="header__logo">
+        <svg class="icon__logo">
+          <use href="img/sprite.svg#logo"></use>
+        </svg>
+        <svg class="icon__text">
+          <use href="img/sprite.svg#binabox"></use>
+        </svg>
       </div>
-         </form>
 
-        <!--buttons-->
-    <a href="#" class="button button--primary button--medium">Discord</a>
-    <button type="button" class="button button--secondary button--medium">
-      Connect
-    </button>
+   
+      <div class="header__buttons">
+        <div class="header__divider"></div>
+        <a href="#" class="button button--primary button--medium header__discord">
+          <img src="img/icons/discord.svg" class="icon__discord" alt="icon-discord">
+          <span class="visually-hidden">Discord</span>  </a>
+        
+        <button type="button" class="button button--secondary button--medium header__wallet">
+          <img src="img/icons/wallet.svg" class="icon__wallet" alt="icon-wallet">
+          <span class="visually-hidden">Connect</span>
+        </button>
+      </div>
+
+      <div class="menu__nav">
+        <div class="header__search">
+        <form class="search-form" action="#" method="get">
+          <div class="search-form__field">
+            <label for="query" class="visually-hidden">Search</label>
+            <input
+              type="search"
+              name="query"
+              id="query"
+              class="search-form__input"
+              placeholder="Search"
+              required
+            />
+            <button type="submit" class="search-form__button"></button>
+          </div>
+        </div>
+        </form>
+
+        <ul class="nav__list">
+          {% for item in nav %}
+          <li class="nav__item">
+            <a href="{{ item.url }}.html" class="nav__link">
+              {{ item.text }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+    
+      </div>
+    </nav>
   </div>
 </header>

@@ -1,14 +1,33 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 .faqs {
-  padding: $spacing-4xl;
+  padding-inline: $spacing-m;
+  padding-block: 0 $spacing-4xl;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include tab {
+    padding-inline: $spacing-l;
+    gap: 1.5rem;
+  }
+  @include desk {
+    padding-inline: 64px;
+    padding-block: 64px 104px;
+  }
 
   &__title {
     font-family: $font-accent;
-    font-size: $title-size-xl;
+    font-size: $title-size-l;
     font-weight: $font-weight-regular;
-    line-height: 48px;
-    letter-spacing: 0.5px;
+    line-height: 36px;
+    letter-spacing: 0;
     text-align: center;
     color: $white;
+
+    @include desk {
+      font-size: $title-size-xl;
+      line-height: 48px;
+      letter-spacing: -0.5px;
+    }
   }
 }

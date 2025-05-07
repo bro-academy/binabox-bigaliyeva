@@ -22,27 +22,4 @@
     letter-spacing: 0;
     color: $soft-white;
   }
-  &::before {
-    position: absolute;
-    width: 70px;
-    height: 90.85px;
-    content: "";
-    background-image: url("../img/glow-top-1x.png");
-    background-repeat: no-repeat;
-    background-position: top left;
-    top: 0px;
-    left: 0px;
-  }
-
-  &::after {
-    position: absolute;
-    width: 80px;
-    height: 103.83px;
-    content: "";
-    background-image: url("../img/glow-bottom.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    bottom: 0px;
-    right: 0px;
-  }
 }

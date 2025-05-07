@@ -3,7 +3,7 @@
 
   <div class="blog-container">
     {% for article in blog.articles %}
-    <article  class="blog-container__card{% if article.isBig %} blog-container__card--big{% endif %}" >
+    <article  class="blog-container__card blog-container__card--{{ loop.index }}" >
       <div class="blog-container__image">
         <img
           src="/img/{{ article.image }}-1x.webp"

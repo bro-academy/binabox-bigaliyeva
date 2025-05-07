@@ -1,28 +1,24 @@
 @use "../base/variables" as *;
 .accordion {
+  color: $white;
+  font-weight: $font-weight-regular;
   background-color: $secondary-color;
+  letter-spacing: 0;
   padding: 24px 24px 32px;
-  margin-top: 40px;
-  margin-bottom: $spacing-m;
 
   &__header {
     font-family: $font-accent;
-    font-size: $size-xl;
+    font-size: $title-size-m;
     font-weight: $font-weight-regular;
     line-height: 32px;
-    letter-spacing: 0;
-    color: $white;
-    padding-top: 0px;
-    padding-bottom: $size-xl;
+    padding: $spacing-m;
     border-bottom: 1px solid $dark-blue;
   }
 
   &__content {
     font-size: $base-size;
-    font-weight: $font-weight-regular;
-    line-height: $size-xl;
+    line-height: 24px;
     letter-spacing: 0;
-    color: $white;
     margin-top: 16px;
   }
 }

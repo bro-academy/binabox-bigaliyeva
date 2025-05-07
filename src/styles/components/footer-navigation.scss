@@ -1,7 +1,25 @@
 @use "../base/variables" as *;
 .footer-nav {
+  display: flex;
+  gap: 24px;
+  padding-top: 36px;
+
+  &__title {
+    display: block;
+    font-family: $font-base;
+    font-size: $size-l;
+    font-weight: $font-weight-medium;
+    line-height: $size-xxl;
+    letter-spacing: 0;
+    color: $white;
+  }
   &__list {
     list-style: none;
+    padding-top: 8px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
   }
 
   &__link {

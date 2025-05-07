@@ -1,5 +1,6 @@
 <section class="catalog">
   <div class="catalog__container">
+  <div class="catalog__header">
     <div class="catalog__slider">
       <div class="catalog__block-title">
         <img
@@ -8,10 +9,11 @@
           alt="icon catalog"
         />
         <h2 class="catalog__title">{{ homepage.catalog.title }}</h2>
-      </div>
+          </div>
 
       <div class="catalog__line"></div>
-
+        </div>
+    
       <div class="catalog__nav">
         <a href="#" class="button button--primary button--small">{{
           homepage.catalog.buttonSeeAll
@@ -32,6 +34,7 @@
         </button>
       </div>
     </div>
+    <div>
    <div class="catalog__products">
    {% for item in homepage.catalog.featuredProducts %}
   {% set product = item %}

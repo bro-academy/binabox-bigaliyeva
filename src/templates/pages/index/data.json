@@ -31,7 +31,7 @@
   ],
   "banner": {
     "highlight": "BINABOX",
-    "title": " EXPLORE NFT COLLECTION",
+    "title": "EXPLORE NFT COLLECTION",
     "text": "We are the best way to check the rarity of NFT collection",
     "stats": [
       { "value": "2240+", "label": "Total Iteam" },
@@ -59,7 +59,7 @@
         "price": "199$",
         "badge": "New",
         "badgeType": "white",
-        "showButton": true
+        "showButton": false
       },
       {
         "image": "scissors",

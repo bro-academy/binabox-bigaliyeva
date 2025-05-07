@@ -1,14 +1,36 @@
 @use "../base/variables" as *;
-/*product cards in catalog*/
+@use "../base/mixins" as *;
+
 .product-card {
   background-color: $secondary-color;
+  padding: $spacing-m;
   display: flex;
+  flex: 0 0 100%;
   justify-content: space-between;
   flex-direction: column;
-  padding: $spacing-l;
+  gap: 1rem;
+  min-width: 260px;
+  max-width: 293px;
+  height: 444px;
   overflow: visible;
-  width: 100%;
-  min-height: 350px;
+  scroll-snap-align: start;
+
+  @include tab {
+    flex: 0 0 50%;
+    height: auto;
+    max-width: 330px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  @include desk {
+    flex: 0 0 25%;
+    max-width: 270px;
+  }
+  @include desk-l {
+    min-width: 290px;
+    gap: 1.5rem;
+  }
 
   &:hover {
     box-shadow: 0 0 10px $light-blue;
@@ -20,32 +42,33 @@
   }
   &__image {
     width: 100%;
-    height: auto;
     display: block;
     object-fit: cover;
     aspect-ratio: 3 / 4;
   }
 
-  &__info {
-    margin-top: 1rem;
-  }
-
   &__price {
     font-family: $font-accent;
-    font-size: $size-3xl;
+    font-size: $title-size-l;
     font-weight: $font-weight-regular;
-    line-height: 48px;
+    line-height: 36px;
     color: $white;
-    margin-top: $spacing-l;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     text-align: left;
+
+    @include tab {
+      font-size: $title-size-xl;
+      line-height: 48px;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
   }
 
   &__name {
     font-family: $font-base;
-    font-size: $size-l;
+    font-size: $title-size-s;
     font-weight: $font-weight-medium;
-    line-height: $size-xxl;
+    line-height: 28px;
     letter-spacing: 0;
     color: $soft-white;
     text-align: left;
