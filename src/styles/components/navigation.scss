@@ -1,19 +1,53 @@
 @use "../base/variables" as *;
-.main-nav {
+@use "../base/mixins" as *;
+.nav {
   font-weight: $font-weight-semibold;
-  font-size: $base-size; // 16px
-  line-height: $size-xl;
+  font-size: $base-size;
+  line-height: 24px;
   letter-spacing: 0;
-  text-align: center;
+  text-align: left;
+
+  @include desk {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
 
   &__list {
+    margin-top: 1rem;
     list-style: none;
-    display: flex;
+    display: grid;
     align-items: center;
+    gap: 8px;
+
+    @include desk {
+      order: 2;
+      display: flex;
+      margin-top: 0;
+    }
   }
 
   &__link {
     padding: 8px 20px;
-    display: flex;
+    display: inline-block;
+  }
+
+  &__link:hover {
+    border-bottom: 4px solid $light-blue;
+    color: $light-blue;
+  }
+
+  &__link:focus {
+    border-bottom: 4px solid $light-blue;
+    border-radius: 5px;
+    padding: 4px;
+  }
+
+  &__link:active {
+    color: $blue;
+  }
+
+  &__link:disabled {
+    color: $gray;
   }
 }

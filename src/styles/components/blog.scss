@@ -1,7 +1,16 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 /*section blog homepage*/
 .blog {
-  padding: 64px;
+  padding: $spacing-m $spacing-xl;
+
+  @include tab {
+    padding-inline: $spacing-l;
+    padding-block: 0 $spacing-4xl;
+  }
+  @include desk {
+    padding: $spacing-4xl;
+  }
 
   &__title {
     font-family: $font-accent;

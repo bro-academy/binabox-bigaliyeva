@@ -1,21 +1,35 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
+
 .about-us {
-  padding: 64px;
+  padding: $spacing-m $spacing-xl;
+  @include tab {
+    padding-inline: $spacing-l;
+    padding-block: 0 $spacing-4xl;
+  }
+  @include desk {
+    padding: $spacing-4xl;
+  }
 
   &__title {
     font-family: $font-accent;
-    font-size: $title-size-xl;
-    line-height: 48px;
-    letter-spacing: -0, 5px;
+    font-size: $title-size-l;
+    line-height: 36px;
+    letter-spacing: 0px;
     text-align: center;
     color: $white;
+    @include desk {
+      font-size: $title-size-xl;
+      line-height: 48px;
+      letter-spacing: -0.5px;
+    }
   }
 
   &__text {
     font-family: $font-base;
-    font-size: $size-l;
+    font-size: $title-size-s;
     font-weight: $font-weight-medium;
-    line-height: $size-xxl;
+    line-height: 28px;
     letter-spacing: 0;
     color: $soft-white;
     text-align: center;
@@ -28,9 +42,20 @@
   &__list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @include desk {
+      grid-template-columns: repeat(3, 1fr);
+      & > li:last-child {
+        grid-column: 1/-1;
+      }
+    }
+    @include desk-l {
+      grid-template-columns: repeat(4, 1fr);
+      & > li:last-child {
+        grid-column: auto;
+      }
+    }
   }
 
   &__item {
