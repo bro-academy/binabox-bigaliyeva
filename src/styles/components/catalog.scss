@@ -93,9 +93,10 @@
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
 
-    @include desk-l {
+    @include desk {
       overflow-x: hidden;
       justify-content: space-between;
+      gap: 1.5rem;
     }
   }
 }
