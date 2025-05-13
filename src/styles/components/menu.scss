@@ -91,7 +91,7 @@
     width: 100%;
     height: calc(100vh - 80px);
     left: 0;
-    transform: translateX(-999px);
+    transform: translateX(-100%);
     transition: transform 0.3s ease-in;
     z-index: 1001;
 
