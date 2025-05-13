@@ -6,10 +6,14 @@
 }
 body {
   font-family: $font-base;
-  max-width: 1728px;
+  min-width: 320px;
   width: 100%;
   background-color: $primary-color;
-  padding-top: 112px;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 80px;
 }
 
 a {
@@ -22,13 +26,18 @@ h3 {
   font-family: $font-accent;
   font-weight: $font-weight-regular;
 }
-h1 {
-  font-size: $size-4xl;
-  line-height: 62px;
-  letter-spacing: -0.5px;
-  color: $white;
-  margin: 0;
-}
 h1 span {
   color: $bright-blue;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }

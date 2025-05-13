@@ -1,13 +1,15 @@
 <section class="banner">
   <div class="banner__container container">
     <div class="banner__content">
+    <div class="banner__info">
       <h1 class="banner__title">
         WITH <span> {{ banner.highlight }}</span>
-        {{ banner.title }}
+        {{ banner.title | safe }}
       </h1>
       <p class="banner__text">
         {{ banner.text }}
       </p>
+    </div>
       <div class="banner__stats">
         {% for stat in banner.stats %}
         <div class="banner__stat">

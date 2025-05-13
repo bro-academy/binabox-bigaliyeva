@@ -1,36 +1,55 @@
-@use 'variables' as *;
+@use "variables" as *;
+
+@mixin desk-l {
+  @media screen and (min-width: #{$screen-desk-l}) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: #{$screen-desk}) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: #{$screen-tab}) {
+    @content;
+  }
+}
+
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin nav-link-style($light-blue, $blue, $gray) {
+  &:hover {
+    border-bottom: 4px solid $light-blue;
+    color: $light-blue;
   }
 
-  @mixin list-reset {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  &:focus {
+    border-bottom: 4px solid $light-blue;
+    color: $white;
   }
 
-  @mixin nav-link-style($light-blue, $blue, $gray) {
-    &:hover {
-      border-bottom: 4px solid $light-blue;
-      color: $light-blue;
-    }
-  
-    &:focus {
-      border-bottom: 4px solid $light-blue;
-      color: $white;
-    }
-  
-    &:active {
-      color: $blue;
-    }
-  
-    &:disabled {
-      color: $gray;
-    }
+  &:active {
+    color: $blue;
   }
-  @mixin button-style(
+
+  &:disabled {
+    color: $gray;
+  }
+}
+@mixin button-style(
   $bg-color,
   $text-color,
   $border: none,
@@ -48,4 +67,5 @@
   background-color: $bg-color;
   border: $border;
   cursor: pointer;
+  text-align: center;
 }

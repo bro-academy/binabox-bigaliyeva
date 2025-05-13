@@ -1,29 +1,111 @@
 @use "../base/variables" as *;
-@use "../components/navigation";
-@use "../components/search-form";
+@use "../base/mixins" as *;
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 112px;
-  padding: 32px;
-  background-color: $primary-color;
-  z-index: 1000;
+  height: 80px;
+  z-index: 2000;
+  background: $primary-color;
+  @include desk {
+    height: 112px;
+  }
 
-  &__container {
+  &__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 32px;
-  }
-  &__logo {
-    flex-shrink: 0;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+
+    @include desk {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+    }
   }
 
-  &__actions {
+  &__logo {
+    padding-left: 20px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 17px;
+
+    @include desk {
+      position: static;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0;
+    }
+  }
+
+  &__divider {
+    display: none;
+
+    @include desk {
+      display: block;
+      width: 2px;
+      height: 24px;
+      border-radius: 1px;
+      background-color: $dark-gray;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    align-items: center;
+    height: 48px;
+
+    @include desk {
+      order: 4;
+    }
+  }
+
+  &__search {
+    height: 48px;
+    @include desk {
+      order: 3;
+    }
+  }
+
+  &__wallet {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
+
+    .visually-hidden {
+      @include tab {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        clip: auto;
+        overflow: visible;
+        white-space: normal;
+      }
+    }
+  }
+  &__discord {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .visually-hidden {
+      @include desk {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        clip: auto;
+        overflow: visible;
+        white-space: normal;
+      }
+    }
   }
 }

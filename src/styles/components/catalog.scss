@@ -1,10 +1,34 @@
 @use "../base/variables" as *;
-/*section catalog homepage*/
+@use "../base/mixins" as *;
+
 .catalog {
-  padding: $spacing-4xl;
+  padding: $spacing-xl $spacing-m;
+
+  @include tab {
+    padding-inline: $spacing-l;
+    padding-block: 0 $spacing-4xl;
+  }
+  @include desk {
+    padding: $spacing-4xl;
+  }
+
+  &__header {
+    display: grid;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @include tab {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    @include desk {
+      justify-content: space-between;
+    }
+  }
 
   &__title {
-    font-size: $size-xl;
+    font-size: $title-size-m;
     font-weight: $font-weight-regular;
     line-height: 32px;
     letter-spacing: 0;
@@ -13,9 +37,9 @@
   }
 
   &__link {
-    font-size: $size-m;
+    font-size: $font-size-xl;
     font-weight: $font-weight-semibold;
-    line-height: $size-xxl;
+    line-height: 28px;
     letter-spacing: 0;
     color: $white;
     border: $border-line solid $dark-gray;
@@ -24,10 +48,10 @@
 
   &__slider {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
-    gap: $spacing-m;
-    padding: $spacing-m 0;
+    gap: $spacing-xl;
   }
 
   &__block-title {
@@ -57,13 +81,22 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: $spacing-m;
+    gap: 12px;
     flex-shrink: 0;
   }
   &__products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
     gap: 1.5rem;
-    padding: 1.5rem;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+
+    @include desk {
+      overflow-x: hidden;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
   }
 }
