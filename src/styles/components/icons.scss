@@ -9,7 +9,7 @@
   &__text {
     width: 134px;
     height: 21px;
-    visibility: hidden;
+    display: none;
 
     @include tab {
       visibility: visible;
