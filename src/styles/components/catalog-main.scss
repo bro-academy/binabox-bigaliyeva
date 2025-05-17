@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 .catalog-main {
   color: white;
   display: grid;
@@ -7,17 +8,31 @@
 
   &__header {
     display: flex;
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding-top: $spacing-4xl;
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
     width: 100%;
-    width: 100%;
+
+    @include tab {
+      flex-wrap: nowrap;
+    }
+
+    @include desk {
+      padding-top: 0;
+    }
+  }
+  &__title {
+    @include tab {
+      flex: 2 0 auto;
+    }
   }
   &__sort {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex: 1;
   }
   &__label {
     font-weight: 500;
@@ -38,10 +53,18 @@
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 1rem;
-    outline: none;
 
     &:focus {
       border-color: $bright-blue;
+    }
+  }
+
+  &__search {
+    flex: 0 0 100%;
+    width: 100%;
+
+    @include tab {
+      flex: 1;
     }
   }
 

@@ -1,6 +1,6 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 .catalog-filter {
-  padding: $spacing-xl;
   border-radius: 8px;
   width: 100%;
 
@@ -15,6 +15,37 @@
     padding: 1.5rem;
     margin: 0;
     background-color: $secondary-color;
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding-bottom: $spacing-s;
+      border-bottom: 1px solid $dark-blue;
+      pointer-events: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      @include desk {
+        pointer-events: auto;
+        display: flex;
+        justify-content: space-between;
+        &::after {
+          content: "+";
+          font-size: 1.2rem;
+          font-weight: $font-weight-regular;
+          color: $white;
+          transition: transform 0.3s;
+        }
+      }
+    }
+
+    @include desk {
+      &[open] summary::after {
+        content: "-";
+      }
+    }
   }
 
   &__title {
@@ -23,10 +54,10 @@
     font-weight: $font-weight-semibold;
     color: $white;
     padding-bottom: $spacing-s;
-    border-bottom: 1px solid $dark-blue;
   }
 
-  &__list {
+  &__list,
+  &__switches {
     list-style: none;
     padding-top: 1rem;
     display: flex;

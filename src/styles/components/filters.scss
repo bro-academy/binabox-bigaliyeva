@@ -1,0 +1,112 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+.filters {
+  position: relative;
+  z-index: 1000;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 24px;
+    background: $primary-color;
+    border: 2px solid $dark-gray;
+    cursor: pointer;
+
+    .filters__label {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-semibold;
+      line-height: 28px;
+      color: $white;
+    }
+
+    .filters__icon {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+
+      .filters__line {
+        background: $white;
+        display: block;
+
+        &--top {
+          width: 18px;
+          height: 2px;
+        }
+        &--middle {
+          width: 14px;
+          height: 2px;
+        }
+        &--bottom {
+          width: 10px;
+          height: 2px;
+        }
+      }
+    }
+    @include desk {
+      display: none;
+    }
+  }
+
+  &__panel {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0d0d1f;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 1.5rem;
+    display: grid;
+    gap: 21px;
+
+    @include desk {
+      transform: none;
+      position: static;
+      height: auto;
+      overflow: visible;
+      padding: 0;
+    }
+  }
+
+  &__toggle:checked ~ .filters__container .filters__panel {
+    transform: translateY(0);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 24px;
+    background: $primary-color;
+    border: 2px solid $dark-gray;
+    color: $white;
+
+    @include desk {
+      display: none;
+    }
+  }
+  h2 {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-semibold;
+    line-height: 28px;
+  }
+
+  &__close {
+    font-size: $title-size-m;
+    cursor: pointer;
+  }
+}

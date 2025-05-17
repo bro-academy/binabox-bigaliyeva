@@ -3,14 +3,45 @@
 {% block content %}
 {% set hero = pages.catalog.hero %}
 {% include "partials/hero.njk" %}
-  <section class="catalog-grid">
-   <div class="catalog-grid__container container">
-  <div class="catalog-grid__sidebar">
-        {% include "partials/catalog-filters.njk" %}
+
+<section class="catalog-page">
+
+  <div class="filters">
+    <input
+    type="checkbox"
+    id="filters-toggle"
+    class="filters__toggle visibility-hidden" />
+
+    <div class="filters__container">
+    <label for="filters-toggle" class="filters__button">
+      <span class="filters__label">Filters</span>
+      <span class="filters__icon">
+        <span class="filters__line filters__line--top"></span>
+        <span class="filters__line filters__line--middle"></span>
+        <span class="filters__line filters__line--bottom"></span>
+      </span>
+    </label>
+    <div class="filters__panel">
+      <div class="filters__header">
+        <h2>Filters</h2>
+        <label for="filters-toggle" class="filters__close">&times;</label>
       </div>
-        <div class="catalog-grid__main">
-        {% include "partials/catalog-main.njk" %}
-      </div>
+      {% include "partials/catalog-filters.njk" %}
+    </div> 
     </div>
-  </section>
+  </div>
+
+<div class="catalog-page__content">
+  <div class="catalog-page__controls">
+    {% include "partials/catalog-main.njk" %}
+  </div>
+
+  <div class="catalog-page__cards">
+   {% for product in catalog.products %}
+    {% set product = product %}
+    {% include "partials/product-card.njk" %}
+  {% endfor %}
+  </div>
+  </div>
+</section>
 {% endblock %}

@@ -344,17 +344,30 @@
   {
     "title": "Face",
     "type": "checkbox",
-    "options": []
+    "options": [
+      { "label": "Yellow", "value": "yellow", "id": "face-yellow" },
+      { "label": "Green", "value": "green", "id": "face-green" },
+      { "label": "Mix", "value": "mix", "id": "face-mix" },
+      { "label": "Orange", "value": "orange", "id": "face-orange" }
+    ]
   },
   {
     "title": "Skin",
-    "type": "checkbox",
-    "options": []
+    "type": "switch",
+    "options": [
+      { "label": "Skin1", "value": "skin1", "id": "skin-1" },
+      { "label": "Skin2", "value": "skin2", "id": "skin-2" }
+    ]
   },
   {
     "title": "Background",
-    "type": "checkbox",
-    "options": []
+    "type": "radio",
+    "options": [
+      { "label": "Yellow", "value": "yellow", "id": "face-yellow" },
+      { "label": "Green", "value": "green", "id": "face-green" },
+      { "label": "Mix", "value": "mix", "id": "face-mix" },
+      { "label": "Orange", "value": "orange", "id": "face-orange" }
+    ]
   },
   {
     "title": "Special",
