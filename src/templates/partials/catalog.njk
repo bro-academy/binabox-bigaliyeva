@@ -34,8 +34,7 @@
         </button>
       </div>
     </div>
-    <div>
-   <div class="catalog__products">
+   <div class="catalog__products card-scroll__container">
    {% for item in homepage.catalog.featuredProducts %}
   {% set product = item %}
    {% include "partials/product-card.njk" %}

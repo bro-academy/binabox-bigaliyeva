@@ -1,15 +1,41 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 .hero {
-  padding-top: 64px;
+  padding-block: 24px 64px;
   background-color: $primary-color;
   background-image: url("../img/hero-banner-2x.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 376px;
+  height: 156px;
+
+  @include tab {
+    height: 168px;
+  }
+  @include desk {
+    padding: 64px 0 0 0;
+    height: 278px;
+  }
+  @include desk-l {
+    padding: 64px 0 0 0;
+    height: 375px;
+  }
+
+  &__container {
+    display: grid;
+    justify-content: center;
+
+    @include desk {
+      gap: 20px;
+    }
+  }
 
   &__title {
     font-family: $font-accent;
-    text-align: center;
+    font-weight: $font-weight-regular;
+    font-size: $title-size-l;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: $white;
   }
 }

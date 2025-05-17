@@ -12,6 +12,7 @@
 @use "../components/banner";
 @use "../components/blog-card";
 @use "../components/catalog";
+@use "../components/card-scroll";
 @use "../components/info-card";
 @use "../components/blog";
 @use "../components/our-blog";
@@ -24,10 +25,13 @@
 @use "../components/contact-form";
 @use "../components/catalog-grid";
 @use "../components/catalog-filters";
+@use "../components/filters";
+@use "../components/catalog-page";
 @use "../components/catalog-main";
 @use "../components/blog-page";
 @use "../components/blog-categories";
 @use "../components/tag-links";
+@use "../components/switch";
 @use "../components/tags";
 @use "../components/post";
 @use "../components/faqs";

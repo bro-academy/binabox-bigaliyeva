@@ -1,9 +1,7 @@
 @use "../base/variables" as *;
 .breadcrumb {
-  margin-top: 24px;
   font-size: $size-s;
   color: $white;
-  text-align: center;
 
   &__list {
     display: flex;

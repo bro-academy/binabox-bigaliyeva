@@ -15,8 +15,10 @@
     <h3 class="product-card__name">{{ product.name }}</h3>
 
     {% if product.showButton %}
-      <button class="product-card__btn">Buy</button>
-       <button class="product-card__btn">Favourites</button>
+    <div class="product-card__overlay">
+      <button class="product-card__btn product-card__btn--primary">Buy</button>
+       <button class="product-card__btn product-card__btn--secondary">Favourites</button>
+   </div>
     {% endif %}
   </div>
 </article>
