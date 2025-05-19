@@ -1,26 +1,40 @@
 <aside class="catalog-filter">
   <form class="catalog-filter__form" action="#" method="get">
     {% for filter in filters %}
-    <div class="catalog-filter__block">
-      <h3 class="catalog-filter__title">{{ filter.title }}<h3>
+    <details class="catalog-filter__block" open>
+        <summary class="catalog-filter__title">{{ filter.title }}</summary>
 
-      {% if filter.options.length %}
-      <ul class="catalog-filter__list">
-        {% for option in filter.options %}
-        <li class="catalog-filter__item">
-        <input type="{{ filter.type }}" id="{{ option.id }}" name="{{ filter.title | lower | replace(' ', '-') }}" value="{{ option.value}}"
-            {% if filter.type == 'radio' and
-            loop.first %} required {% endif %} />
-              <label class="catalog-filter__label" for="{{ option.id}}">
-            {{ option.label }}
-          </label>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
+        {% if filter.options.length %}
+          {% if filter.type == "checkbox" or filter.type == "radio" %}
+            <ul class="catalog-filter__list catalog-filter__list--{{ filter.type }}">
+              {% for option in filter.options %}
+                <li class="catalog-filter__item">
+                  <input
+                    type="{{ filter.type }}"
+                    id="{{ option.id }}"
+                    name="{{ filter.id }}"
+                    value="{{ option.value }}"
+                    {% if filter.type == 'radio' and loop.first %} required {% endif %} />
+                  <label class="catalog-filter__label" for="{{ option.id }}">
+                    {{ option.label }}
+                  </label>
+                </li>
+              {% endfor %}
+            </ul>
+      {% elif filter.type == "switch" %}
+            <div class="catalog-filter__switches">
+              {% for option in filter.options %}
+                <label class="switch">
+                  <input type="checkbox" id="{{ option.id }}" name="{{ option.value }}">
+                  <span class="switch__track"></span>
+                  {{ option.label }}
+                </label>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endif %}
+      </details>
     {% endfor %}
-
     <button type="submit" class="button button--secondary button--large">Apply</button>
   </form>
 </aside>

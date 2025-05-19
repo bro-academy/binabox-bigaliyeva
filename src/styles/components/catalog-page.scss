@@ -1,0 +1,54 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+.catalog-page {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include desk {
+    padding: $spacing-4xl;
+    grid-template-columns: 320px 1fr;
+    gap: 64px;
+  }
+
+  &__filters {
+    margin-bottom: 1rem;
+  }
+
+  &__controls {
+    margin-bottom: 2rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include tab {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desk-l {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product-card {
+      @include tab {
+        padding: 1.5rem;
+      }
+    }
+    .product-card__image {
+      height: 400px;
+
+      @include tab {
+        height: 340px;
+      }
+
+      @include desk {
+        height: 432px;
+      }
+      @include desk-l {
+        height: 368px;
+      }
+    }
+  }
+}

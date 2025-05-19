@@ -1,5 +1,6 @@
 <article class="product-card">
-  <a href="#" class="product-card__image-wrapper">
+<div class="product-card__image-wrapper"
+  <a href="#" class="product-card__image">
     <img
       src="/img/{{ product.image }}-1x.webp"
       width="252.8"
@@ -10,13 +11,17 @@
     />
     <span class="badge badge--{{ product.badgeType }}">{{ product.badge }}</span>
   </a>
+
+    {% if product.showButton %}
+    <div class="product-card__overlay">
+     <button class="button button--white product-card__btn">Favourites</button>
+      <button class="button button--secondary product-card__btn">Buy</button>
+      </div>
+    {% endif %}
+  </div>
+
   <div class="product-card__info">
     <p class="product-card__price">{{ product.price }}</p>
     <h3 class="product-card__name">{{ product.name }}</h3>
-
-    {% if product.showButton %}
-      <button class="product-card__btn">Buy</button>
-       <button class="product-card__btn">Favourites</button>
-    {% endif %}
   </div>
 </article>
